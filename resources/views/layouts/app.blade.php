@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>thdoteo | @yield('title')</title>
+    <meta name="description" content="Explore my laboratory. My name is Theo and I am a computer science student. Below are all the projects I have worked on.">
+
+    <meta name="turbolinks-cache-control" content="no-cache">
+
+    <meta name="theme-color" content="#377dff">
+    <meta name="msapplication-navbutton-color" content="#377dff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="icon" type="image/png" href="/images/icon.png">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/ocean.min.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timeago.js/3.0.2/timeago.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <a href="/">
+            <img class="header-icon" src="/images/icon.png">
+        </a>
+
+        <div class="header-nav">
+            @if (Route::currentRouteName() === 'projects.show')
+                <a href="/" class="header-nav-item">
+                    <svg class="header-nav-back" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                        <path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z"/>
+                    </svg>
+                    Go back to laboratory
+                </a>
+            @else
+                <a href="/" class="header-nav-main @if (Route::currentRouteName() === 'projects.index') header-nav-main_active @endif">Laboratory</a>
+                <a href="/about" class="header-nav-item @if (Route::currentRouteName() === 'about') header-nav-item_active @endif">About</a>
+                <a href="/contact" class="header-nav-item @if (Route::currentRouteName() === 'contact') header-nav-item_active @endif">Contact</a>
+            @endif
+        </div>
+    </div>
+
+    <div class="content">
+        @yield('content')
+    </div>
+
+</div>
+
+</body>
+</html>
