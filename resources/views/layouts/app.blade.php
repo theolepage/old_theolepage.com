@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>thdoteo | @yield('title')</title>
-    <meta name="description" content="Explore my laboratory. My name is Theo and I am a computer science student. Below are all the projects I have worked on.">
+    <meta name="description" content="Hello and welcome to my laboratory. My name is Theo and I am a computer science student. Take a look at my projects.">
 
     <meta name="turbolinks-cache-control" content="no-cache">
 
@@ -38,7 +38,7 @@
                     <svg class="header-nav-back" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
                         <path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z"/>
                     </svg>
-                    Go back to laboratory
+                    Laboratory
                 </a>
             @else
                 <a href="/" class="header-nav-main @if (Route::currentRouteName() === 'projects.index') header-nav-main_active @endif">Laboratory</a>

@@ -163,7 +163,7 @@ p {
  */
 
 .heading {
-    margin-top: 50px;
+    margin-top: 40px;
 
     /*text-align: center;*/
 }
@@ -192,9 +192,10 @@ p {
 
 .experiments {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 40px;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: dense;
 }
 
 .experiments::before {
@@ -205,9 +206,14 @@ p {
     grid-column: 1 / 1;
 }
 
-.experiments > *:first-child {
+.experiments > .experiment:first-child {
     grid-row: 1 / 1;
     grid-column: 1 / 1;
+}
+
+.experiments > .experiment_large:first-child {
+    grid-row: 1 / 1;
+    grid-column: span 2 / 3;
 }
 
 .experiment {
@@ -407,11 +413,6 @@ p {
 .lab-button_red { color: #ff7474; background: rgba(255, 55, 125, 0.1); }
 .lab-button_red:hover { background: #ff8282; }
 
-.lab-screenshot {
-
-
-    overflow: hidden;
-}
 .lab-screenshot img {
     width: 100%;
 }
@@ -443,25 +444,35 @@ p {
 }
 
 .experiment-contributor {
-    margin: 40px 0;
+    display: inline-block;
+    width: 120px;
+
+    text-align: center;
+
+    margin: 0 10px 10px 0;
+    padding: 22px 22px;
+
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 4px;
 }
+.experiment-contributor:hover { text-decoration: none; }
 
 .experiment-contributor-name {
-    position: relative;
-    top: 8px;
-    left: 30px;
+    display: block;
 
-    font-size: 18px;
+    margin-top: 4px;
+
     color: rgb(60, 60, 60);
+
+    transition: color 0.3s;
 }
-a.experiment-contributor-name:hover {
-    color: #377dff;
-}
+a.experiment-contributor:hover span.experiment-contributor-name { color: #377dff; }
 
 .experiment-contributor-picture {
-    float: left;
     width: 38px;
     height: 38px;
+
+    margin-bottom: 16px;
 
     border-radius: 100%;
 }
@@ -670,7 +681,7 @@ a.experiment-contributor-name:hover {
 .contact-section_form {
     width: 100%;
 
-    margin-right: 100px;
+    margin-right: 60px;
 }
 
 .contact-section_more {
@@ -678,17 +689,18 @@ a.experiment-contributor-name:hover {
 }
 
 .contact-section {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
 }
 
-.contact-link {
-    display: block;
+.contact-info {
+    margin: 0 auto 40px auto;
+    padding: 24px 30px;
 
-    margin: 10px 0;
-    padding: 10px;
+    color: rgb(60, 60, 60);
 
-    background: rgb(245, 245, 245);
+    background: #E9F1FE;
+    border-radius: 6px;
 }
 
 .contact-success {
@@ -722,10 +734,10 @@ a.experiment-contributor-name:hover {
     justify-content: space-between;
 }
 
-.contact-info {
+.contact-senderinfo {
     width: 48%;
 
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .contact-header {
@@ -777,7 +789,7 @@ a.experiment-contributor-name:hover {
     display: block;
     width: 170px;
 
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
     padding: 28px 0;
 
     color: #377dff;
@@ -797,11 +809,11 @@ a.experiment-contributor-name:hover {
 
 @media screen and (max-width: 800px) {
     .contact {
-        padding: 0;
-
-        border: 0;
+        display: block;
     }
-    .contact-info {
+    .contact-section_more {
         width: 100%;
+
+        margin-top: 60px;
     }
 }

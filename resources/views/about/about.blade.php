@@ -57,12 +57,17 @@
 
         <div class="about-section">
             <h1 class="about-section-title">Some other interests</h1>
+            <p class="about-section-content">
+                Spending time far away from a screen has helped me solving many bugs...
+                This is one of the reason why I like spending time in Britanny, France.
+                I go there to be on the coast and be able to do what I love, sailing.
+                During the summer holidays I work as a sailing instructor and teach small groups how to windsurf.
+            </p>
             <img src="/images/sailing.jpg" alt="sailing" class="about-section-image">
             <p class="about-section-content">
-                Spending time far away from a screen has helped me solving many bugs.
-                This is one of the reason why I like spending time in Britanny, France.
-                I go there to sail and <span class="about-significant">windsurf</span>.
-                I am also a sailing instructor during summer.
+                Otherwise, I had the opportunity to travel to many countries around the world.
+                Such as the USA, England, Mexico, Cuba, Ireland, Morocco, Egypt, Senegal, Jordan, Italy, Spain and some others.
+                It has always been a particular and instructive experience.
             </p>
         </div>
 

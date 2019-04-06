@@ -8,18 +8,12 @@
 
     <div class="heading">
         <div class="heading-title">Contact</div>
-        <div class="heading-subtitle">Get in touch with me for whatever reason.</div>
+        <div class="heading-subtitle">Send me a message or reach me on social networks.</div>
     </div>
 
     <div class="contact">
 
         <div class="contact-section contact-section_form">
-            <div class="lab-section-title">Send me a message</div>
-
-            <div class="lab-alert">
-                You can send an email directly to theo[at]thdoteo[dot]com.
-            </div>
-
             @if(session()->has('success'))
                 <div class="contact-success">
                     {{ session()->get('success') }}
@@ -29,14 +23,14 @@
             <form class="contact-form" action="/contact" method="post">
                 @csrf
 
-                <div class="contact-info">
+                <div class="contact-senderinfo">
                     <label for="name" class="contact-label">First and last name</label>
                     <input type="text" name="name" class="contact-name @if ($errors->has('name')) contact-input-error @endif" placeholder="John Doe">
                     @if ($errors->has('name'))
                         <div class="contact-error">{{ $errors->first('name') }}</div>
                     @endif
                 </div>
-                <div class="contact-info">
+                <div class="contact-senderinfo">
                     <label for="email" class="contact-label">Email address</label>
                     <input type="email" name="email" class="contact-email @if ($errors->has('email')) contact-input-error @endif" placeholder="john@doe.com">
                     @if ($errors->has('email'))
@@ -55,12 +49,14 @@
         </div>
 
         <div class="contact-section contact-section_more">
-            <div class="lab-section-title">Other ways to reach me</div>
+            <div class="contact-info">
+                Or email me directly at theo[at]thdoteo[dot]com.
+            </div>
 
-            You can also check my profile on the following websites.
-            <a target="_blank" rel="noopener" href="http://twitter.com/thdoteo" class="contact-link">Twitter</a>
-            <a target="_blank" rel="noopener" href="http://github.com/thdoteo" class="contact-link">Github</a>
-            <a target="_blank" rel="noopener" href="https://fr.linkedin.com/in/theolepage" class="contact-link">LinkedIn</a>
+            You can also check my profile on
+            <a target="_blank" rel="noopener" href="http://twitter.com/thdoteo" class="contact-link">Twitter</a>,
+            <a target="_blank" rel="noopener" href="http://github.com/thdoteo" class="contact-link">Github</a> or
+            <a target="_blank" rel="noopener" href="https://fr.linkedin.com/in/theolepage" class="contact-link">LinkedIn</a>.
         </div>
 
     </div>
