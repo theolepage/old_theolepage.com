@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>thdoteo | @yield('code') @yield('title')</title>
+    <title>@yield('code') @yield('title') — thdoteo.com</title>
 
     <meta name="theme-color" content="#377dff">
     <meta name="msapplication-navbutton-color" content="#377dff">

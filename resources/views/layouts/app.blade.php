@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>thdoteo | @yield('title')</title>
+    <title>@yield('title') — thdoteo</title>
     <meta name="description" content="Hello and welcome to my laboratory. My name is Theo and I am a computer science student. Take a look at my projects.">
 
     <meta name="turbolinks-cache-control" content="no-cache">
