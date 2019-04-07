@@ -362,20 +362,21 @@
     padding: 22px 22px;
 
     border: 1px solid rgb(240, 240, 240);
-    border-radius: 4px;
+
+    transition: border 0.3s;
 }
-.lab-contributor:hover { text-decoration: none; }
+a.lab-contributor:hover { text-decoration: none; border: 1px solid rgb(220, 220, 220); }
 
 .lab-contributor-name {
     display: block;
 
     margin-top: 4px;
 
-    color: rgb(60, 60, 60);
+    color: rgb(100, 100, 100);
 
     transition: color 0.3s;
 }
-a.lab-contributor:hover span.lab-contributor-name { color: #377dff; }
+a.lab-contributor:hover span.lab-contributor-name { color: #000; }
 
 .lab-contributor-picture {
     width: 38px;
@@ -415,6 +416,7 @@ a.lab-contributor:hover span.lab-contributor-name { color: #377dff; }
     .project:hover .project-cuboid { transform: rotateX(0deg)!important; }
     .project-cuboid-side { transform: rotateX(0deg); top: 219px; }
     .project_large .project-cuboid-face { height: 440px; }
+    .project:hover .project-cuboid-side { border-top: 1px solid rgb(240, 240, 240); }
 
     /* Make lab sections use full width */
     .lab-sections {
@@ -435,10 +437,9 @@ a.lab-contributor:hover span.lab-contributor-name { color: #377dff; }
     .lab-header-buttons {
         margin-top: 60px;
 
-        text-align: left;
+        text-align: center;
     }
     .lab-header-button {
-        margin-left: 0;
-        margin-right: 10px;
+        margin: 10px 0;
     }
 }
