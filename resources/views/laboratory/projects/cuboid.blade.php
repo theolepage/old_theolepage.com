@@ -23,12 +23,12 @@
             @endif
         </div>
 
-        <div class="project-cuboid-face project-cuboid-side">
-            @if (!$project->large)
+        @if (!$project->large)
+            <div class="project-cuboid-face project-cuboid-side">
                 <div class="project-category">@include('laboratory.categories.show')</div>
                 <div class="project-description">{{ $project->description }}</div>
-            @endif
-        </div>
+            </div>
+        @endif
 
     </div>
 

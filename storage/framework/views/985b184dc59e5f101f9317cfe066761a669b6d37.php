@@ -23,12 +23,12 @@
             <?php endif; ?>
         </div>
 
-        <div class="project-cuboid-face project-cuboid-side">
-            <?php if(!$project->large): ?>
+        <?php if(!$project->large): ?>
+            <div class="project-cuboid-face project-cuboid-side">
                 <div class="project-category"><?php echo $__env->make('laboratory.categories.show', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?></div>
                 <div class="project-description"><?php echo e($project->description); ?></div>
-            <?php endif; ?>
-        </div>
+            </div>
+        <?php endif; ?>
 
     </div>
 

@@ -391,6 +391,12 @@ a.lab-contributor:hover span.lab-contributor-name { color: #377dff; }
 */
 
 @media screen and (max-width: 600px) {
+    .lab-ideas {
+        display: block;
+
+        text-align: center;
+    }
+
     /* Disable lab grid and make cuboids flat */
     .wrapper_lab {
         width: 100%;
@@ -406,8 +412,9 @@ a.lab-contributor:hover span.lab-contributor-name { color: #377dff; }
 
         margin: 0 auto 300px auto;
     }
-    .project:hover .project-cuboid { transform: rotateX(0deg); }
+    .project:hover .project-cuboid { transform: rotateX(0deg)!important; }
     .project-cuboid-side { transform: rotateX(0deg); top: 219px; }
+    .project_large .project-cuboid-face { height: 440px; }
 
     /* Make lab sections use full width */
     .lab-sections {
