@@ -12,7 +12,7 @@
             </div>
             <div class="experiment-letter" style="color: <?= $project->color ?>"><?php echo e($project->getLetter()); ?></div>
             <div class="experiment-title"><?php echo e($project->getTitle()); ?></div>
-            <div class="experiment-labels"><?php echo $__env->make('laboratory.categories.show', ['icon' => true], \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?></div>
+            <div class="experiment-category"><?php echo $__env->make('laboratory.categories.show', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?></div>
         </div>
 
         <div class="experiment-cube-face experiment-cube-side">

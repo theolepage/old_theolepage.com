@@ -121,7 +121,7 @@ p {
     color: white;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .header-nav-main { display: none; }
 }
 
@@ -135,7 +135,7 @@ p {
 
 @media screen and (max-width: 600px) {
     .header {
-        padding: 30px 25px;
+        padding: 38px 25px;
     }
     .content {
         padding: 0 25px;

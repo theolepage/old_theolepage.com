@@ -1,11 +1,9 @@
-<div class="experiment-label"
-    style="color: <?php echo e($project->category->color); ?>">
-    <?php if(isset($icon)): ?>
-        <?php echo e(strtoupper($project->category->name[0])); ?>
+<span style="color: <?php echo e($project->category->color); ?>">
+    <?php if(isset($lab)): ?>
+        <?php echo e(strtoupper($project->category->name)); ?>
 
     <?php else: ?>
         <?php echo e(strtoupper($project->category->name)); ?>
 
     <?php endif; ?>
-
-</div>
+</span>

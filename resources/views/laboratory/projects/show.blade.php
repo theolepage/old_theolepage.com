@@ -4,20 +4,20 @@
 
 @section('content')
 
-<div class="wrapper">
+<div class="lab wrapper">
 
-    <div class="lab-info">
+    <div class="lab-header">
 
-        <div class="lab-info-title">
+        <div class="lab-header-info">
             <div class="heading-title" style="color: {{ $project->color }}">{{ $project->getTitle() }}</div>
             <div class="heading-subtitle">{{ $project->description }}</div>
         </div>
 
         @if (!empty($project->website_url) || !empty($project->github_repo_name))
-            <div class="lab-buttons">
+            <div class="lab-header-buttons">
                 @if (!empty($project->website_url))
                     <a
-                        class="lab-button lab-button_green"
+                        class="lab-header-button lab-header-button_green"
                         target="_blank" rel="noopener"
                         href="{{ $project->website_url }}">
                         Website
@@ -26,7 +26,7 @@
 
                 @if (!empty($project->github_repo_name))
                     <a
-                        class="lab-button"
+                        class="lab-header-button"
                         target="_blank" rel="noopener"
                         href="https://github.com/{{ $project->github_repo_username }}/{{ $project->github_repo_name }}">
                         View on GitHub
@@ -55,9 +55,7 @@
             <div class="lab-section lab-section_large">
                 <div class="lab-section-title">Screenshot</div>
 
-                <div class="lab-screenshot">
-                    <img src="{{ $project->screenshot_url }}" alt="lab-screenshot">
-                </div>
+                <img src="{{ $project->screenshot_url }}" class="lab-screenshot" alt="lab-screenshot">
             </div>
         @endif
 
@@ -77,8 +75,8 @@
                 <div class="lab-spec-value">{{ $project->getTitle() }}</div>
             </div>
             <div class="lab-spec">
-                <div class="lab-spec-name">Type</div>
-                <div class="lab-spec-value">@include('laboratory.categories.show')</div>
+                <div class="lab-spec-name">Category</div>
+                <div class="lab-spec-value">@include('laboratory.categories.show', ['lab' => true])</div>
             </div>
             <div class="lab-spec">
                 <div class="lab-spec-name">Color</div>
@@ -87,9 +85,9 @@
         </div>
 
         <div class="lab-section">
-            <div class="lab-section-title">Cube</div>
+            <div class="lab-section-title">Cuboid</div>
 
-            @include('laboratory.projects.cube')
+            @include('laboratory.projects.cuboid')
         </div>
 
         <div class="lab-section">

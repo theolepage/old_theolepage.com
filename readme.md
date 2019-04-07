@@ -8,6 +8,7 @@ My personal website.
 
 v3.0
 - Namings (creators, use my full name)?
+- Use ansible for production deployment
 - Lab: search, filters
 - Admin: modular sections, uploads
-- Contact: queue emails + anti spam
+- Contact: queue emails, anti spam

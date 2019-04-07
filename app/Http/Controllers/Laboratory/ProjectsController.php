@@ -11,7 +11,7 @@ class ProjectsController extends Controller
 {
     public function index()
     {
-        $projects = Project::where('published', '1')->get();
+        $projects = Project::where('published', '1')->get()->reverse();
         $setting = Setting::first();
 
         return view('laboratory.projects.index', [

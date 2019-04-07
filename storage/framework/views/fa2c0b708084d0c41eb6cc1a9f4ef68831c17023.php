@@ -2,20 +2,20 @@
 
 <?php $__env->startSection('content'); ?>
 
-<div class="wrapper">
+<div class="lab wrapper">
 
-    <div class="lab-info">
+    <div class="lab-header">
 
-        <div class="lab-info-title">
+        <div class="lab-header-info">
             <div class="heading-title" style="color: <?php echo e($project->color); ?>"><?php echo e($project->getTitle()); ?></div>
             <div class="heading-subtitle"><?php echo e($project->description); ?></div>
         </div>
 
         <?php if(!empty($project->website_url) || !empty($project->github_repo_name)): ?>
-            <div class="lab-buttons">
+            <div class="lab-header-buttons">
                 <?php if(!empty($project->website_url)): ?>
                     <a
-                        class="lab-button lab-button_green"
+                        class="lab-header-button lab-header-button_green"
                         target="_blank" rel="noopener"
                         href="<?php echo e($project->website_url); ?>">
                         Website
@@ -24,7 +24,7 @@
 
                 <?php if(!empty($project->github_repo_name)): ?>
                     <a
-                        class="lab-button"
+                        class="lab-header-button"
                         target="_blank" rel="noopener"
                         href="https://github.com/<?php echo e($project->github_repo_username); ?>/<?php echo e($project->github_repo_name); ?>">
                         View on GitHub
@@ -53,9 +53,7 @@
             <div class="lab-section lab-section_large">
                 <div class="lab-section-title">Screenshot</div>
 
-                <div class="lab-screenshot">
-                    <img src="<?php echo e($project->screenshot_url); ?>" alt="lab-screenshot">
-                </div>
+                <img src="<?php echo e($project->screenshot_url); ?>" class="lab-screenshot" alt="lab-screenshot">
             </div>
         <?php endif; ?>
 
@@ -75,8 +73,8 @@
                 <div class="lab-spec-value"><?php echo e($project->getTitle()); ?></div>
             </div>
             <div class="lab-spec">
-                <div class="lab-spec-name">Type</div>
-                <div class="lab-spec-value"><?php echo $__env->make('laboratory.categories.show', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?></div>
+                <div class="lab-spec-name">Category</div>
+                <div class="lab-spec-value"><?php echo $__env->make('laboratory.categories.show', ['lab' => true], \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?></div>
             </div>
             <div class="lab-spec">
                 <div class="lab-spec-name">Color</div>
@@ -85,9 +83,9 @@
         </div>
 
         <div class="lab-section">
-            <div class="lab-section-title">Cube</div>
+            <div class="lab-section-title">Cuboid</div>
 
-            <?php echo $__env->make('laboratory.projects.cube', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php echo $__env->make('laboratory.projects.cuboid', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         </div>
 
         <div class="lab-section">

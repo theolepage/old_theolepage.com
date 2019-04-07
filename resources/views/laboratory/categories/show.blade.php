@@ -1,9 +1,7 @@
-<div class="experiment-label"
-    style="color: {{ $project->category->color }}">
-    @if (isset($icon))
-        {{ strtoupper($project->category->name[0]) }}
+<span style="color: {{ $project->category->color }}">
+    @if (isset($lab))
+        {{ strtoupper($project->category->name) }}
     @else
         {{ strtoupper($project->category->name) }}
     @endif
-
-</div>
+</span>
