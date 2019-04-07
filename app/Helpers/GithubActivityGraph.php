@@ -75,7 +75,7 @@ class GithubActivityGraph
         // Generate data
         $this->data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         foreach ($weeks as $week) {
-            $month = DateTime::createFromFormat('U', $week['week'])->format('n');
+            $month = DateTime::createFromFormat('U', $week['week'])->format('n') - 1;
             $this->data[$month] += $week['total'];
         }
         $this->data = array_values($this->data);
