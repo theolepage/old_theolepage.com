@@ -1,16 +1,15 @@
-@extends('layouts.app')
+<?php $__env->startSection('title', 'Laboratory'); ?>
 
-@section('title', 'Laboratory')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <div class="lab wrapper_lab">
 
-    @if ($setting->alert_enabled)
+    <?php if($setting->alert_enabled): ?>
             <div class="lab-alert">
-                <span class="lab-alert-title">Message</span>{{ $setting->alert_text }}
+                <span class="lab-alert-title">Message</span><?php echo e($setting->alert_text); ?>
+
             </div>
-        @endif
+        <?php endif; ?>
 
     <div class="heading">
         <div class="heading-title">Laboratory</div>
@@ -57,18 +56,20 @@
     <div class="lab-container">
         <div class="lab-title">Projects</div>
         <div class="lab-projects">
-            @foreach($projects as $project)
-            @include('laboratory.projects.cuboid')
-            @endforeach
+            <?php $__currentLoopData = $projects; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php echo $__env->make('laboratory.projects.cuboid', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
         <div class="lab-title">Small projects and experiments</div>
         <div class="lab-projects">
-            @foreach($experiments as $project)
-                @include('laboratory.projects.cuboid')
-            @endforeach
+            <?php $__currentLoopData = $experiments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <?php echo $__env->make('laboratory.projects.cuboid', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
     </div>
 
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

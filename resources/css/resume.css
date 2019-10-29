@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans:400,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+
+    background: rgb(250, 250, 250);
+}
+
+a {
+    color: #377dff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.resume {
+    width: 210mm;
+    height: 296mm;
+
+    margin: 10mm auto;
+    padding: 12mm 16mm;
+
+    text-align: justify;
+    font-size: 18px;
+
+    background: #fff;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.08);
+}
+
+.resume-contact {
+    display: flex;
+
+    margin-top: 20px;
+
+    font-size: 14px;
+}
+
+.resume-contact-col {
+    display: flex;
+    flex-wrap: wrap;;
+}
+
+.resume-contact-top {
+    margin-bottom: 10px;
+}
+
+.resume-section {
+    margin: 10mm 0;
+}
+
+.resume-item {
+    margin: 4mm 0;
+}
+
+.resume-icons {
+    display: flex;
+
+    margin-top: 1mm;
+
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.resume-icon {
+    width: 14px;
+
+    margin-right: 10px;
+}
+
+.resume-date {
+    margin-left: 20px;
+}
+
+.resume-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+}
+
+.resume-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.resume-text {
+    margin-top: 1mm;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.resume-name {
+    font-family: 'Noto Serif', serif;
+    font-size: 26px;
+}
+
+.resume-description {
+    margin-top: 2mm;
+
+    font-size: 16px;
+    font-family: 'Noto Serif', serif;
+    color: rgba(0, 0, 0, 0.5);
+}
