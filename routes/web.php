@@ -34,13 +34,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
 });
 
 
-// About
-Route::group(['namespace' => 'About', 'as' => 'about'], function () {
-    Route::get('/about', 'AboutController@page');
+// Resume
+Route::get('/resume', function () {
+    return view('resume.resume');
 });
 
-// Contact
-Route::group(['namespace' => 'Contact', 'as' => 'contact'], function () {
-    Route::get('/contact', 'ContactController@page');
-    Route::post('/contact', 'ContactController@contact');
-});
+// Route::group(['namespace' => 'Resume', 'as' => 'resume'], function () {
+//     Route::get('/resume', 'ResumeController@page');
+// });

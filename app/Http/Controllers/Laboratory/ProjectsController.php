@@ -11,11 +11,13 @@ class ProjectsController extends Controller
 {
     public function index()
     {
-        $projects = Project::where('published', '1')->get()->reverse();
+        $projects = Project::where('published', '1')->where('large', true)->get()->reverse();
+        $experiments = Project::where('published', '1')->where('large', false)->get()->reverse();
         $setting = Setting::first();
 
         return view('laboratory.projects.index', [
             'projects' => $projects,
+            'experiments' => $experiments,
             'setting' => $setting
         ]);
     }

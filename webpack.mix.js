@@ -14,9 +14,8 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/admin.js', 'public/js')
    .styles('resources/css/error.css', 'public/css/error.css')
+   .styles('resources/css/resume.css', 'public/css/resume.css')
    .styles([
        'resources/css/app.css',
        'resources/css/lab.css',
-       'resources/css/about.css',
-       'resources/css/contact.css'
    ], 'public/css/app.css');

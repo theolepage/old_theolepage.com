@@ -1,8 +1,6 @@
-@extends('layouts.app')
+<?php $__env->startSection('title', 'Contact'); ?>
 
-@section('title', 'Contact')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <div class="wrapper">
 
@@ -14,35 +12,36 @@
     <div class="contact">
 
         <div class="contact-section contact-section_form">
-            @if(session()->has('success'))
+            <?php if(session()->has('success')): ?>
                 <div class="contact-success">
-                    {{ session()->get('success') }}
+                    <?php echo e(session()->get('success')); ?>
+
                 </div>
-            @endif
+            <?php endif; ?>
 
             <form class="contact-form" action="/contact" method="post">
-                @csrf
+                <?php echo csrf_field(); ?>
 
                 <div class="contact-senderinfo">
                     <label for="name" class="contact-label">First and last name</label>
-                    <input type="text" name="name" class="contact-name @if ($errors->has('name')) contact-input-error @endif" placeholder="John Doe">
-                    @if ($errors->has('name'))
-                        <div class="contact-error">{{ $errors->first('name') }}</div>
-                    @endif
+                    <input type="text" name="name" class="contact-name <?php if($errors->has('name')): ?> contact-input-error <?php endif; ?>" placeholder="John Doe">
+                    <?php if($errors->has('name')): ?>
+                        <div class="contact-error"><?php echo e($errors->first('name')); ?></div>
+                    <?php endif; ?>
                 </div>
                 <div class="contact-senderinfo">
                     <label for="email" class="contact-label">Email address</label>
-                    <input type="email" name="email" class="contact-email @if ($errors->has('email')) contact-input-error @endif" placeholder="john@doe.com">
-                    @if ($errors->has('email'))
-                        <div class="contact-error">{{ $errors->first('email') }}</div>
-                    @endif
+                    <input type="email" name="email" class="contact-email <?php if($errors->has('email')): ?> contact-input-error <?php endif; ?>" placeholder="john@doe.com">
+                    <?php if($errors->has('email')): ?>
+                        <div class="contact-error"><?php echo e($errors->first('email')); ?></div>
+                    <?php endif; ?>
                 </div>
 
                 <label for="message" class="contact-label">Message</label>
-                <textarea name="message" class="contact-message @if ($errors->has('message')) contact-input-error @endif" placeholder="Hello, ..."></textarea>
-                @if ($errors->has('message'))
-                    <div class="contact-error">{{ $errors->first('message') }}</div>
-                @endif
+                <textarea name="message" class="contact-message <?php if($errors->has('message')): ?> contact-input-error <?php endif; ?>" placeholder="Hello, ..."></textarea>
+                <?php if($errors->has('message')): ?>
+                    <div class="contact-error"><?php echo e($errors->first('message')); ?></div>
+                <?php endif; ?>
 
                 <button type="submit" class="contact-button">Send</button>
             </form>
@@ -63,4 +62,6 @@
 
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
