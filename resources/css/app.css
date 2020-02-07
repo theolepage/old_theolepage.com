@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
 /**
@@ -19,7 +19,7 @@ html, body {
 	color: rgb(60, 60, 60);
 	font-family: 'Roboto', sans-serif;
 
-	background: rgb(254, 254, 254);
+	background: rgb(253, 253, 255);
 }
 
 .turbolinks-progress-bar {
@@ -48,7 +48,10 @@ p {
 
 .container {
 	position: relative;
-	z-index: 10;
+    z-index: 10;
+    
+    width: 90%;
+    margin: auto;
 }
 
 /**
@@ -56,13 +59,18 @@ p {
 **/
 
 .header {
-	padding: 38px 50px;
+	padding: 38px 0;
 }
 
-.header-icon {
-	display: inline-block;
-	vertical-align: top;
-	width: 22px;
+.header-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+    font-family: 'Questrial';
+}
+.header-name:hover {
+    color: rgba(54, 122, 255, 1);
+    text-decoration: none;
 }
 
 .header-nav {
@@ -86,15 +94,17 @@ p {
     fill: rgb(0, 0, 0);
 }
 
-.header-nav-item, .header-nav-main {
+.header-nav-item {
+    position: relative;
+    top: -2px;
 	display: inline-block;
 
 	margin-left: 2px;
-	padding: 16px 20px;
+	padding: 18px 20px;
 
 	color: rgb(100, 100, 100);
 	font-family: 'Questrial', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 
 	border-radius: 6px;
 }
@@ -108,19 +118,6 @@ p {
     color: #000;
 }
 
-.header-nav-main {
-    margin-right: 14px;
-}
-.header-nav-main:hover {
-    text-decoration: none;
-    background: #377dff;
-    color: #fff;
-}
-.header-nav-main_active {
-    background: #377dff;
-    color: white;
-}
-
 @media screen and (max-width: 600px) {
     .header-nav-main { display: none; }
 }
@@ -130,7 +127,6 @@ p {
  */
 
 .content {
-    padding: 0 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -171,7 +167,7 @@ p {
 .heading-title {
     margin-bottom: 14px;
 
-    font-size: 34px;
+    font-size: 32px;
     line-height: 1.5;
     font-family: 'Questrial', sans-serif;
     color: #377dff;
@@ -180,8 +176,8 @@ p {
 .heading-subtitle {
     margin-top: 6px;
 
-    font-size: 22px;
-    color: rgb(100, 100, 100);
+    font-size: 20px;
+    color: rgb(80, 80, 80);
     line-height: 1.75;
     font-family: 'Questrial', sans-serif;
 }

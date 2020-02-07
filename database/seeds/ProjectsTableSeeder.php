@@ -38,7 +38,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => 'https://thdoteo.com',
                 'downloads_url' => null,
-                'background_image_url' => '/uploads/thdoteo.com.png'
+                'screenshot_url' => '/uploads/thdoteo.com.png'
             ],
             [
                 'name' => 'TSCraft',
@@ -63,7 +63,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => 'https://www.youtube.com/channel/UCQwiANpDL8s761GfsLcoRqA',
                 'downloads_url' => null,
-                'background_image_url' => '/uploads/tscraft.jpg'
+                'screenshot_url' => '/uploads/tscraft.jpg'
             ],
             [
                 'name' => 'voidMaze',
@@ -88,7 +88,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => 'https://lab.thdoteo.com/voidmaze',
                 'downloads_url' => null,
-                'background_image_url' => 'https://raw.githubusercontent.com/thdoteo/voidMaze/master/screenshot.png'
+                'screenshot_url' => 'https://raw.githubusercontent.com/thdoteo/voidMaze/master/screenshot.png'
             ],
             [
                 'name' => 'php-random-avatars',
@@ -113,7 +113,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => null
+                'screenshot_url' => null
             ],
             [
                 'name' => 'dictionary-generator',
@@ -138,7 +138,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => null
+                'screenshot_url' => null
             ],
             [
                 'name' => 'docker-webdev',
@@ -163,7 +163,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => null
+                'screenshot_url' => null
             ],
             [
                 'name' => 'vagrant-webdev',
@@ -188,7 +188,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => null
+                'screenshot_url' => null
             ],
             [
                 'name' => 'Tornado',
@@ -213,7 +213,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => '/uploads/tornado.jpg'
+                'screenshot_url' => '/uploads/tornado.jpg'
             ],
             [
                 'name' => 'CantStopDriving',
@@ -238,7 +238,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => 'https://cantstopdriving.thdoteo.com/',
                 'downloads_url' => 'https://cantstopdriving.thdoteo.com/play.html',
-                'background_image_url' => '/uploads/tornado.jpg'
+                'screenshot_url' => '/uploads/tornado.jpg'
             ],
             [
                 'name' => 'OCR',
@@ -263,7 +263,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => 'https://github.com/NoneOfAllOfTheAbove/OCR/raw/master/docs/final-report.pdf',
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => 'https://raw.githubusercontent.com/NoneOfAllOfTheAbove/OCR/master/docs/screenshot.png'
+                'screenshot_url' => 'https://raw.githubusercontent.com/NoneOfAllOfTheAbove/OCR/master/docs/screenshot.png'
             ],
             [
                 'name' => 'web-experiments',
@@ -288,7 +288,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => 'https://raw.githubusercontent.com/thdoteo/experiments/master/clock/screenshot.png'
+                'screenshot_url' => 'https://raw.githubusercontent.com/thdoteo/experiments/master/clock/screenshot.png'
             ],
             [
                 'name' => 'FaceDetection',
@@ -313,7 +313,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => 'https://raw.githubusercontent.com/thdoteo/FaceDetection/master/docs/screenshot.png'
+                'screenshot_url' => 'https://raw.githubusercontent.com/thdoteo/FaceDetection/master/docs/screenshot.png'
             ],
             [
                 'name' => 'php-framework',
@@ -338,7 +338,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => null
+                'screenshot_url' => null
             ],
             [
                 'name' => 'Inaudible',
@@ -363,7 +363,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => 'https://raw.githubusercontent.com/thdoteo/Inaudible/master/screenshot.png'
+                'screenshot_url' => 'https://raw.githubusercontent.com/thdoteo/Inaudible/master/screenshot.png'
             ],
             [
                 'name' => 'Brainstorming',
@@ -388,7 +388,7 @@ class ProjectsTableSeeder extends Seeder
                 'report_url' => null,
                 'website_url' => null,
                 'downloads_url' => null,
-                'background_image_url' => null
+                'screenshot_url' => null
             ]
         ]);
     }
