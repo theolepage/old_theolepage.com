@@ -19,7 +19,7 @@ html, body {
 	color: rgb(60, 60, 60);
 	font-family: 'Roboto', sans-serif;
 
-	background: rgb(253, 253, 255);
+    background: rgb(254, 254, 255);    
 }
 
 .turbolinks-progress-bar {
@@ -186,50 +186,69 @@ p {
  * Lab
  */
 
-.lab-alert {
-    display: inline-block;
+.lab-container {
+    margin-top: 60px;
+}
 
-    margin: 40px auto 0 auto;
-    padding: 26px 40px;
+.lab-internship {
+    display: block;
+    max-width: 880px;
 
-    color: rgb(60, 60, 60);
-    font-size: 16px;
-    line-height: 2.75;
-    text-align: center;
+    margin: 00px auto 80px auto;
+    padding: 24px 36px;
 
     background: #E9F1FE;
+    border-left: 8px solid #377dff;
     border-radius: 6px;
 }
 
-.lab-alert-title {
-    margin-right: 20px;
+.lab-internship-title {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: 2;
     color: #377dff;
 }
 
-.lab-ideas {
-    display: inline-block;
-
-    margin: 20px auto 100px auto;
-
-    text-decoration: none!important;
-    color: rgb(100, 100, 100);
-
-    fill: rgb(100, 100, 100);
-
-    transition: fill 0.3s, color 0.3s;
-}
-.lab-ideas:hover {
-    color: #000;
-
-    fill: rgb(0, 0, 0);
+.lab-internship-text {
+    color: rgb(60, 60, 60);
+    font-size: 18px;
+    line-height: 2;
 }
 
-.lab-ideas-icon {
-    position: relative;
-    top: 2px;
-    width: 20px;
+.lab-internship-buttons {
+    display: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 
-    margin-right: 8px;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.lab-internship-button {
+    display: block;
+    width: 118px;
+
+    margin-right: 20px;
+    padding: 16px 0;
+
+    color: #377dff;
+    font-size: 15px;
+    text-align: center;
+
+    background: rgba(55, 125, 255, 0.1);
+    border-radius: 8px;
+
+    transition: all 0.2s ease-in-out;
+}
+.lab-internship-button:hover { text-decoration: none; color: #fff; background-color: #377dff; }
+
+.lab-internship-french {
+    font-size: 16px;
+    color: rgb(80, 80, 80);
 }
 
 /**
@@ -249,7 +268,7 @@ p {
     display: flex;
     flex-wrap: wrap;
 
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .project-footer {
@@ -263,26 +282,25 @@ p {
 .project {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
 
     margin: 50px 50px 0 0;
-    padding: 30px 30px;
+    padding: 50px 30px;
 
     width: 260px;
     height: 260px;
 
     border-radius: 8px;
-    /* box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.05); */
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
 
     font-family: 'Roboto', sans-serif;
 
-    transition: 0.2s transform;
+    transition: 0.3s border-color;
 }
 .project:hover {
-    transform: translateY(-15px);
+    /* box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.05); */
     text-decoration: none;
     border-color: rgba(0, 0, 0, 0.2);
 }
@@ -536,5 +554,16 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
     }
     .lab-header-button {
         margin: 10px 0;
+    }
+
+    .lab-internship {
+        width: 100%;
+
+        padding: 30px 40px;
+
+        border-left: 0;
+    }
+    .lab-internship-french {
+        margin-top: 14px;
     }
 }

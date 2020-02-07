@@ -38,9 +38,6 @@
                     </svg>
                     Laboratory
                 </a>
-            <?php else: ?>
-                <a href="/" class="header-nav-item">Projects</a>
-                <a href="/about" class="header-nav-item">About</a>
             <?php endif; ?>
         </div>
     </div>

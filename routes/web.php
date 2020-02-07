@@ -38,7 +38,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
 Route::get('/resume', function () {
     return view('resume.resume');
 });
-
-// Route::group(['namespace' => 'Resume', 'as' => 'resume'], function () {
-//     Route::get('/resume', 'ResumeController@page');
-// });
+Route::get('/resume/fr', function () {
+    return view('resume.resume_fr');
+});

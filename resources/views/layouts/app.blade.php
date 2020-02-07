@@ -38,9 +38,6 @@
                     </svg>
                     Laboratory
                 </a>
-            @else
-                <a href="/" class="header-nav-item">Projects</a>
-                <a href="/about" class="header-nav-item">About</a>
             @endif
         </div>
     </div>
