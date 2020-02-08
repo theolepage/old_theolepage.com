@@ -8,15 +8,10 @@ My personal website.
 
 ### v2.5
 
-#### Homepage
-
-- [ ] Create lab header
-- [ ] Project cards: design
-- [ ] Project cards: animation
-
 #### Lab
 
-- [ ] Update project database
+- [ ] Update project database (zencove, minimake, myfind, printf, 42sh, ember, robocar, intra-asm)
+- [ ] Remove video and replace by screenshot slideshow
 - [ ] Progress -> progress bar
 - [ ] Yes -> checkboxes
 - [ ] Color -> color circle
@@ -27,17 +22,14 @@ My personal website.
 
 #### Resume
 
-- [ ] icon project open source
-- [ ] bold text / labels
-- [ ] icon epita
-- [ ] check content
-- [ ] personalize style
-- [ ] print dimensions
+- [ ] French version
+- [ ] Update photo
+- [ ] Verify content and sync with LinkedIn
 
 ### v3.0
 
 - [ ] Frontend: switch to React
-- [ ] Backend: replace mysql by static files
-- [ ] Hosting: docker container + heroku/digitalocean
+- [ ] Backend: replace mysql by static files (.md ?)
+- [ ] Hosting: docker container + auto deployment heroku/digitalocean
 - [ ] Lab: search and filters
 - [ ] Lab: modular sections
