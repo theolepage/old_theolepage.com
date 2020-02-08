@@ -1,6 +1,6 @@
-# thdoteo.com
+# theolepage.com
 
-![Screenshot](https://raw.githubusercontent.com/thdoteo/thdoteo.com/master/docs/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/theolepage/theolepage.com/master/docs/screenshot.png)
 
 My personal website.
 
@@ -10,7 +10,7 @@ My personal website.
 
 #### Lab
 
-- [ ] Update project database (zencove, minimake, myfind, printf, 42sh, ember, robocar, intra-asm)
+- [ ] Update project database (zencove, robocar, intra-asm)
 - [ ] Remove video and replace by screenshot slideshow
 - [ ] Progress -> progress bar
 - [ ] Yes -> checkboxes

@@ -35,9 +35,9 @@
                     Theo Lepage
                 </a>
 
-                <a class="resume-contact-item" href="https://github.com/thdoteo">
+                <a class="resume-contact-item" href="https://github.com/theolepage">
                     <img class="resume-icon" src="/images/icon-github.svg" alt="icon-github">
-                    thdoteo
+                    theolepage
                 </a>
             </div>
         </div>
@@ -151,7 +151,7 @@
     </div>
 
     <div class="resume-section resume-projects">
-        <div class="resume-title">Personal projects</div>
+        <div class="resume-title">Projects</div>
 
         <div class="resume-cols">
             <div class="resume-col">
@@ -175,18 +175,21 @@
             <div class="resume-col">
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
-                        <!-- <img class="resume-icon" src="/images/icon-github.svg" alt="icon-github"> -->
-                        <a href="#">A POSIX shell: 42sh</a>
+                        <img class="resume-icon" src="/images/icon-github.svg" alt="icon-github">
+                        <a href="https://github.com/theolepage/thdoteo.com">Recruitment project on EMBER dataset</a>
                     </div>
-                    <div class="resume-text">Implemented a shell in 4 weeks in C by complying with the Command Shell Language standard. Our project is ready to use and is able to parse Bash grammar.</div>
+                    <div class="resume-text">
+                        Developped machine learning methods (k-means, deep neural networks, ...) to classify a dataset of malware programs.
+                        Ranked second out of 15 participants.
+                    </div>
                 </div>
 
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
                         <img class="resume-icon" src="/images/icon-github.svg" alt="icon-github">
-                        <a href="https://github.com/thdoteo/thdoteo.com">My website: thdoteo.com</a>
+                        <a href="https://github.com/theolepage/42sh">A POSIX shell: 42sh</a>
                     </div>
-                    <div class="resume-text">My website, originally created ten years ago, aims to present some of my open source projects. A back end allows me to add and edit projects on the fly.</div>
+                    <div class="resume-text">Implemented a shell in 4 weeks in C by complying with the Command Shell Language standard. Our project is ready to use and is able to parse Bash grammar.</div>
                 </div>
             </div>
         </div>
