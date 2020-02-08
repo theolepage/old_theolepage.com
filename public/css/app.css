@@ -59,7 +59,7 @@ p {
 **/
 
 .header {
-	padding: 38px 0;
+	padding: 38px 0 20px 0;
 }
 
 .header-name {
@@ -174,8 +174,6 @@ p {
 }
 
 .heading-subtitle {
-    margin-top: 6px;
-
     font-size: 20px;
     color: rgb(80, 80, 80);
     line-height: 1.75;
@@ -192,63 +190,18 @@ p {
 
 .lab-internship {
     display: block;
-    max-width: 1000px;
+    max-width: 900px;
 
-    margin: 00px auto 60px auto;
-    padding: 24px 36px;
+    margin: 40px 0 80px 0;
+    padding: 22px 34px;
+
+    color: rgb(60, 60, 60);
+    font-size: 20px;
+    line-height: 2;
 
     background: #E9F1FE;
     border-left: 8px solid #377dff;
     border-radius: 6px;
-}
-
-.lab-internship-title {
-    display: block;
-
-    margin-bottom: 10px;
-
-    font-size: 20px;
-    line-height: 2;
-    color: #377dff;
-}
-
-.lab-internship-text {
-    color: rgb(60, 60, 60);
-    font-size: 18px;
-    line-height: 2;
-}
-
-.lab-internship-buttons {
-    display: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
-    font-size: 18px;
-    margin-top: 16px;
-}
-
-.lab-internship-button {
-    display: block;
-    width: 118px;
-
-    margin-right: 20px;
-    padding: 16px 0;
-
-    color: #377dff;
-    font-size: 15px;
-    text-align: center;
-
-    background: rgba(55, 125, 255, 0.1);
-    border-radius: 8px;
-
-    transition: all 0.2s ease-in-out;
-}
-.lab-internship-button:hover { text-decoration: none; color: #fff; background-color: #377dff; }
-
-.lab-internship-french {
-    font-size: 16px;
-    color: rgb(80, 80, 80);
 }
 
 /**
@@ -373,7 +326,7 @@ p {
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .lab-header-info {
@@ -554,16 +507,5 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
     }
     .lab-header-button {
         margin: 10px 0;
-    }
-
-    .lab-internship {
-        width: 100%;
-
-        padding: 30px 40px;
-
-        border-left: 0;
-    }
-    .lab-internship-french {
-        margin-top: 14px;
     }
 }
