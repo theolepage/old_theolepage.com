@@ -140,7 +140,7 @@ document.querySelectorAll('select[multiple]').forEach(function (select) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/theo/Documents/Lab/thdoteo.com/resources/js/admin.js */"./resources/js/admin.js");
+module.exports = __webpack_require__(/*! /home/theo/Documents/Lab/theolepage.com/resources/js/admin.js */"./resources/js/admin.js");
 
 
 /***/ })
