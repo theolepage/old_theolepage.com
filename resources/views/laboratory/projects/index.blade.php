@@ -6,17 +6,15 @@
 
 <div class="lab wrapper_lab">
 
-    <div class="heading">
-        <div class="heading-title">Laboratory</div>
-        <div class="heading-subtitle">Hello, my name is Theo and I am a computer science student.</div>
-        <div class="heading-subtitle">My "laboratory" aims to present some of my current and past projects.</div>
-    </div>
-
     <div class="lab-internship">
         I am currently seeking an internship in Software Engineering starting in September 2020.
         <a data-turbolinks="false" href="/resume">Learn more by reading my resume</a>
-        (also available in <a data-turbolinks="false" href="/resume/fr">French</a>)
-    </div>    
+    </div>
+
+    <div class="lab-heading">
+        <div class="lab-heading-title">Hello, I am <span class="lab-emphasize">Theo</span>, a computer science student.</div>
+        <div class="lab-heading-title">Welcome to my <span class="lab-emphasize">laboratory</span>.</div>
+    </div>
 
     <div class="lab-container">
         <div class="lab-title">Projects</div>

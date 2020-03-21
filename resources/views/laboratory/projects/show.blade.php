@@ -80,7 +80,10 @@
             </div>
             <div class="lab-spec">
                 <div class="lab-spec-name">Color</div>
-                <div class="lab-spec-value">{{ $project->getColor() }}</div>
+                <div class="lab-spec-value">
+                    <div class="lab-color" style="background: {{ $project->getColor() }};"></div>
+                    {{ $project->getColor() }}
+                </div>
             </div>
         </div>
 
@@ -94,6 +97,18 @@
             <div class="lab-section-title">Project</div>
 
             <div class="lab-spec">
+                <div class="lab-spec-name">Status</div>
+                <div class="lab-spec-value @if ($project->status != 0) lab-spec-value_alert @endif">
+                    @if ($project->status == 1)
+                        Under development
+                    @elseif ($project->status == 0)
+                        Finished
+                    @elseif ($project->status == 2)
+                        Paused
+                    @endif
+                </div>
+            </div>
+            <div class="lab-spec">
                 <div class="lab-spec-name">Creation date</div>
                 <div class="lab-spec-value">{{ $project->getCreationDate() }}</div>
             </div>
@@ -103,19 +118,10 @@
                     @if ($project->progress < 0)
                         Ongoing
                     @else
-                        {{ $project->progress }}%
-                    @endif
-                </div>
-            </div>
-            <div class="lab-spec">
-                <div class="lab-spec-name">Status</div>
-                <div class="lab-spec-value @if ($project->status != 0) lab-spec-value_alert @endif">
-                    @if ($project->status == 1)
-                        Under development
-                    @elseif ($project->status == 0)
-                        Finished
-                    @elseif ($project->status == 2)
-                        Paused
+                        <div class="lab-progress">
+                            <div class="lab-progress-bar" style="width: {{ $project->progress }}%"></div>
+                            <div class="lab-progress-value">{{ $project->progress }}%</div>
+                        </div>
                     @endif
                 </div>
             </div>
@@ -132,7 +138,11 @@
 
             <div class="lab-spec">
                 <div class="lab-spec-name">Open source</div>
-                <div class="lab-spec-value">@if (empty($project->github_repo_name)) No @else Yes @endif</div>
+                <div class="lab-spec-value">
+                    <div class="lab-checkbox">
+                        @if (!empty($project->github_repo_name))  <img class="lab-checkbox-mark" src="/images/icon-check.svg" alt="icon-check"> @endif
+                    </div>
+                </div>
             </div>
             <div class="lab-spec">
                 <div class="lab-spec-name">Technologies</div>

@@ -10,11 +10,15 @@ My personal website.
 
 #### Lab
 
+- [X] Improve lab heading
+- [X] Color -> color circle
+- [X] Category -> small labels
+- [X] Progress -> progress bar
+- [X] Yes -> checkboxes
+
+- [ ] Fix git activity graph bug
 - [ ] Update project database (zencove, robocar, intra-asm)
 - [ ] Remove video and replace by screenshot slideshow
-- [ ] Progress -> progress bar
-- [ ] Yes -> checkboxes
-- [ ] Color -> color circle
 
 #### About
 

@@ -1,9 +1,4 @@
-<span style="color: <?php echo e($project->category->color); ?>">
-    <?php if(isset($lab)): ?>
-        <?php echo e(strtoupper($project->category->name)); ?>
+<span class="lab-category" style="color: <?php echo e($project->category->color); ?>; border-color: <?php echo e($project->category->color); ?>">
+    <?php echo e($project->category->name); ?>
 
-    <?php else: ?>
-        <?php echo e(strtoupper($project->category->name)); ?>
-
-    <?php endif; ?>
 </span>

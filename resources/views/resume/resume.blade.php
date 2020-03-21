@@ -132,7 +132,7 @@
 
         <div class="resume-item">
             <div class="resume-subtitle">
-                <span class="resume-emphasize"><a href="https://www.epita.fr/en">CSUMB - California State University, Monterey Bay</a></span>
+                <span class="resume-emphasize"><a href="https://csumb.edu/">CSUMB - California State University, Monterey Bay</a></span>
                 (Semester abroad)
             </div>
             <div class="resume-education-icons">
