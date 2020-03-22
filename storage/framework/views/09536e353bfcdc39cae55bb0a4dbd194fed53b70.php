@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title><?php echo $__env->yieldContent('title'); ?></title>
-    <meta name="description" content="Hello and welcome to my laboratory. My name is Theo and I am a computer science student. Take a look at my projects.">
+    <meta name="description" content="Hello, I am Theo, a computer science student. Welcome to my laboratory.">
 
     <meta name="turbolinks-cache-control" content="no-cache">
 

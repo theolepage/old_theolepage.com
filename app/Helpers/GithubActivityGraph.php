@@ -87,7 +87,7 @@ class GithubActivityGraph
         $year = $date->format('Y');
         for ($i = 1; $i < 13; $i++) {
             $monthName = DateTime::createFromFormat('n', $i)->format('F');
-            if ($i <= $month) {
+            if ($i < $month) {
                 $this->labels[] = $monthName . ' ' . $year;
             } else {
                 $this->labels[] = $monthName . ' ' . ($year - 1);

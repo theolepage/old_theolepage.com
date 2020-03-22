@@ -2,13 +2,12 @@
 
 <?php $__env->startSection('content'); ?>
 
-<div class="lab wrapper">
+<div class="wrapper wrapper_narrow">
 
     <div class="lab-header">
-
         <div class="lab-header-info">
-            <div class="heading-title" style="color: <?php echo e($project->color); ?>"><?php echo e($project->getTitle()); ?></div>
-            <div class="heading-subtitle"><?php echo e($project->description); ?></div>
+            <div class="lab-header-title" style="color: <?php echo e($project->color); ?>"><?php echo e($project->getTitle()); ?></div>
+            <div class="lab-header-subtitle"><?php echo e($project->description); ?></div>
         </div>
 
         <?php if(!empty($project->website_url) || !empty($project->github_repo_name)): ?>
@@ -36,26 +35,29 @@
 
     <div class="lab-sections">
 
-        <?php if($project->youtube_video_id): ?>
-            <div class="lab-section lab-section_large">
-
-                <div class="lab-section-title">Video</div>
-
-                <div class="lab-video">
-                    <iframe
-                        width="560" height="315"
-                        src="https://www.youtube.com/embed/<?php echo e($project->youtube_video_id); ?>?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist=<?php echo e($project->youtube_video_id); ?>"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        <?php elseif($project->screenshot_url): ?>
+        <?php if(count($carousel) == 1): ?>
             <div class="lab-section lab-section_large">
                 <div class="lab-section-title">Screenshot</div>
 
                 <img src="<?php echo e($project->screenshot_url); ?>" class="lab-screenshot" alt="lab-screenshot">
             </div>
         <?php endif; ?>
+
+    </div>
+
+</div>
+
+<?php if(count($carousel) > 1): ?>
+    <div class="lab-carousel owl-carousel owl-theme">
+        <?php $__currentLoopData = $carousel; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $image): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <img src="<?php echo e($image); ?>" class="lab-carousel-item" alt="lab-carousel-item">
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+    </div>
+<?php endif; ?>
+
+<div class="wrapper wrapper_narrow">
+
+    <div class="lab-sections">
 
         <div class="lab-section">
             <div class="lab-section-title">General</div>
@@ -179,6 +181,36 @@
             <?php endif; ?>
         </div>
 
+        <?php if($project->youtube_video_id): ?>
+            <div class="lab-section lab-section_large">
+
+                <div class="lab-section-title">Video</div>
+
+                <div class="lab-video">
+                    <iframe
+                        width="560" height="315"
+                        src="https://www.youtube.com/embed/<?php echo e($project->youtube_video_id); ?>?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist=<?php echo e($project->youtube_video_id); ?>"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        <?php endif; ?>
+
+        <?php if($project->about): ?>
+            <div class="lab-section lab-section_large lab-section_about">
+                <div class="lab-section-title">About</div>
+
+                <div class="lab-section-content">
+                    <?php if(empty($project->about)): ?>
+                        None
+                    <?php else: ?>
+                        <?php echo $project->getAbout(); ?>
+
+                    <?php endif; ?>
+                </div>
+            </div>
+        <?php endif; ?>
+
         <div class="lab-section">
             <div class="lab-section-title">Team</div>
 
@@ -193,21 +225,6 @@
             <div class="lab-section">
                 <div class="lab-section-title">Activity</div>
                 <canvas data-graph="<?php echo e(json_encode($activityGraph)); ?>" id="lab-activity" width="50%" height="25"></canvas>
-            </div>
-        <?php endif; ?>
-
-        <?php if($project->about): ?>
-            <div class="lab-section lab-section_large">
-                <div class="lab-section-title">About</div>
-
-                <div class="lab-section-content">
-                    <?php if(empty($project->about)): ?>
-                        None
-                    <?php else: ?>
-                        <?php echo $project->getAbout(); ?>
-
-                    <?php endif; ?>
-                </div>
             </div>
         <?php endif; ?>
     </div>

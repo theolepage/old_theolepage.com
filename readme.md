@@ -8,32 +8,18 @@ My personal website.
 
 ### v2.5
 
-#### Lab
-
-- [X] Improve lab heading
-- [X] Color -> color circle
-- [X] Category -> small labels
-- [X] Progress -> progress bar
-- [X] Yes -> checkboxes
-
-- [ ] Fix git activity graph bug
-- [ ] Update project database (zencove, robocar, intra-asm)
-- [ ] Remove video and replace by screenshot slideshow
-
-#### About
-
-- [ ] Create simple about page (short text, link to resume/contact)
-
-#### Resume
-
-- [ ] French version
-- [ ] Update photo
-- [ ] Verify content and sync with LinkedIn
+- [ ] Update resume / projects info
 
 ### v3.0
 
+## Technologies
+
 - [ ] Frontend: switch to React
-- [ ] Backend: replace mysql by static files (.md ?)
-- [ ] Hosting: docker container + auto deployment heroku/digitalocean
+- [ ] Backend: replace mysql by static files
+- [ ] Hosting: docker container + auto deployment
+
+## Features
+
+- [ ] Create about page (short description, link to resume, contact)
 - [ ] Lab: search and filters
 - [ ] Lab: modular sections

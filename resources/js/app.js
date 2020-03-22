@@ -52,15 +52,30 @@ function createActivityGraph() {
 
 function init()
 {
-    // Contact
-    autosize(document.querySelector('.contact-message'));
-
     // Lab
     timeago().render(document.querySelectorAll('.timeago'));
     createActivityGraph();
     document.querySelectorAll('code').forEach(function(element) {
         hljs.highlightBlock(element);
     });
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        loop: false,
+        margin: 10,
+
+        autoplay: false,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: true,
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            }
+        }
+    })
 }
 
 document.addEventListener("turbolinks:load", function() {

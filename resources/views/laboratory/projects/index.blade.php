@@ -4,27 +4,27 @@
 
 @section('content')
 
-<div class="lab wrapper_lab">
+<div class="wrapper">
 
-    <div class="lab-internship">
+    <div class="internship">
         I am currently seeking an internship in Software Engineering starting in September 2020.
         <a data-turbolinks="false" href="/resume">Learn more by reading my resume</a>
     </div>
 
-    <div class="lab-heading">
-        <div class="lab-heading-title">Hello, I am <span class="lab-emphasize">Theo</span>, a computer science student.</div>
-        <div class="lab-heading-title">Welcome to my <span class="lab-emphasize">laboratory</span>.</div>
+    <div class="heading">
+        <p>Hello, I am <span class="emphasize">Theo</span>, a computer science student.</p>
+        <p>Welcome to my <span class="emphasize">laboratory</span>.</p>
     </div>
 
-    <div class="lab-container">
-        <div class="lab-title">Projects</div>
-        <div class="lab-projects">
+    <div class="projects">
+        <div class="projects-title">Projects</div>
+        <div class="projects-section">
             @foreach($projects as $project)
                 @include('laboratory.projects.cuboid')
             @endforeach
         </div>
-        <div class="lab-title">Small projects and experiments</div>
-        <div class="lab-projects">
+        <div class="projects-title">Small projects and experiments</div>
+        <div class="projects-section">
             @foreach($experiments as $project)
                 @include('laboratory.projects.cuboid')
             @endforeach

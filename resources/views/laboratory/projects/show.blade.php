@@ -4,13 +4,12 @@
 
 @section('content')
 
-<div class="lab wrapper">
+<div class="wrapper wrapper_narrow">
 
     <div class="lab-header">
-
         <div class="lab-header-info">
-            <div class="heading-title" style="color: {{ $project->color }}">{{ $project->getTitle() }}</div>
-            <div class="heading-subtitle">{{ $project->description }}</div>
+            <div class="lab-header-title" style="color: {{ $project->color }}">{{ $project->getTitle() }}</div>
+            <div class="lab-header-subtitle">{{ $project->description }}</div>
         </div>
 
         @if (!empty($project->website_url) || !empty($project->github_repo_name))
@@ -38,26 +37,29 @@
 
     <div class="lab-sections">
 
-        @if ($project->youtube_video_id)
-            <div class="lab-section lab-section_large">
-
-                <div class="lab-section-title">Video</div>
-
-                <div class="lab-video">
-                    <iframe
-                        width="560" height="315"
-                        src="https://www.youtube.com/embed/{{ $project->youtube_video_id }}?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist={{ $project->youtube_video_id }}"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        @elseif ($project->screenshot_url)
+        @if (count($carousel) == 1)
             <div class="lab-section lab-section_large">
                 <div class="lab-section-title">Screenshot</div>
 
                 <img src="{{ $project->screenshot_url }}" class="lab-screenshot" alt="lab-screenshot">
             </div>
         @endif
+
+    </div>
+
+</div>
+
+@if (count($carousel) > 1)
+    <div class="lab-carousel owl-carousel owl-theme">
+        @foreach($carousel as $image)
+            <img src="{{ $image }}" class="lab-carousel-item" alt="lab-carousel-item">
+        @endforeach
+    </div>
+@endif
+
+<div class="wrapper wrapper_narrow">
+
+    <div class="lab-sections">
 
         <div class="lab-section">
             <div class="lab-section-title">General</div>
@@ -178,6 +180,35 @@
             @endif
         </div>
 
+        @if ($project->youtube_video_id)
+            <div class="lab-section lab-section_large">
+
+                <div class="lab-section-title">Video</div>
+
+                <div class="lab-video">
+                    <iframe
+                        width="560" height="315"
+                        src="https://www.youtube.com/embed/{{ $project->youtube_video_id }}?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist={{ $project->youtube_video_id }}"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        @endif
+
+        @if ($project->about)
+            <div class="lab-section lab-section_large lab-section_about">
+                <div class="lab-section-title">About</div>
+
+                <div class="lab-section-content">
+                    @if (empty($project->about))
+                        None
+                    @else
+                        {!! $project->getAbout() !!}
+                    @endif
+                </div>
+            </div>
+        @endif
+
         <div class="lab-section">
             <div class="lab-section-title">Team</div>
 
@@ -192,20 +223,6 @@
             <div class="lab-section">
                 <div class="lab-section-title">Activity</div>
                 <canvas data-graph="{{ json_encode($activityGraph) }}" id="lab-activity" width="50%" height="25"></canvas>
-            </div>
-        @endif
-
-        @if ($project->about)
-            <div class="lab-section lab-section_large">
-                <div class="lab-section-title">About</div>
-
-                <div class="lab-section-content">
-                    @if (empty($project->about))
-                        None
-                    @else
-                        {!! $project->getAbout() !!}
-                    @endif
-                </div>
             </div>
         @endif
     </div>

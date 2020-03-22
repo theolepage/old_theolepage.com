@@ -6,7 +6,6 @@
         @endif
     </div>
 
-    <!-- <div class="project-category">@include('laboratory.categories.show')</div> -->
     <div class="project-title" style="color: <?= $project->color ?>">{{ $project->getTitle() }}</div>
     <div class="project-description">{{ $project->description }}</div>
 

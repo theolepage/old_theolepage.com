@@ -15,7 +15,4 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/admin.js', 'public/js')
    .styles('resources/css/error.css', 'public/css/error.css')
    .styles('resources/css/resume.css', 'public/css/resume.css')
-   .styles([
-       'resources/css/app.css',
-       'resources/css/lab.css',
-   ], 'public/css/app.css');
+   .styles('resources/css/app.css', 'public/css/app.css');

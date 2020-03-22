@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
 /**
@@ -49,9 +49,6 @@ p {
 .container {
 	position: relative;
     z-index: 10;
-    
-    width: 90%;
-    margin: auto;
 }
 
 /**
@@ -59,7 +56,7 @@ p {
 **/
 
 .header {
-	padding: 38px 0 20px 0;
+	padding: 32px 0;
 }
 
 .header-name {
@@ -113,80 +110,26 @@ p {
 	background: rgb(245, 245, 245);
     color: #000;
 }
-.header-nav-item_active {
-    background: rgb(245, 245, 245);
-    color: #000;
-}
-
-@media screen and (max-width: 600px) {
-    .header-nav-main { display: none; }
-}
 
 /**
  ** Content
  */
 
 .content {
+    
 }
-
-@media screen and (max-width: 600px) {
-    .header {
-        padding: 38px 25px;
-    }
-    .content {
-        padding: 0 25px;
-    }
-}
-
-/**
- ** Wrapper
- */
 
 .wrapper {
-    width: 1000px;
-
+    width: 90%;
     margin: auto;
 }
-
-@media screen and (max-width: 1200px) {
-    .wrapper {
-        width: 100%;
-    }
-}
+.wrapper_narrow { width: 1200px; }
 
 /**
- ** Heading
+ * Main page
  */
 
-.heading {
-    margin-top: 40px;
-}
-
-.heading-title {
-    margin-bottom: 14px;
-
-    font-size: 32px;
-    line-height: 1.5;
-    font-family: 'Questrial', sans-serif;
-    color: #377dff;
-}
-
-.heading-subtitle {
-    font-size: 20px;
-    color: rgb(80, 80, 80);
-    line-height: 1.75;
-    font-family: 'Questrial', sans-serif;
-}
-
-/**
- * Lab
- */
-
-.lab-container {
-    margin-top: 60px;
-}
-
-.lab-internship {
+.internship {
     max-width: 1200px;
 
     text-align: center;
@@ -202,53 +145,43 @@ p {
     border-radius: 0 6px 6px 6px;
 }
 
-.lab-heading {
+.heading {
     margin-top: 40px;
-}
 
-.lab-heading-title {
     font-size: 28px;
     color: rgb(40, 40, 40);
     line-height: 1.75;
     font-family: 'Questrial', sans-serif;
 }
 
-.lab-emphasize {
+.emphasize {
     color: #377dff;
 }
 
-/**
- * .lab-projects
- **/
+.projects {
+    margin-top: 80px;
+}
 
- .lab-title {
-    margin-top: 6px;
-
+.projects-title {
     font-size: 22px;
     color: rgb(60, 60, 60);
-    line-height: 1.75;
     font-family: 'Questrial', sans-serif;
 }
 
-.lab-projects {
+.projects-section {
     display: flex;
     flex-wrap: wrap;
 
     margin-bottom: 80px;
 }
 
-.project-footer {
-    position: absolute;
-    bottom: 0;
-    height: 20px;
-    left: 0;
-    right: 0;
-}
+/**
+ * Project (cuboid)
+ */
 
 .project {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     position: relative;
 
     margin: 50px 50px 0 0;
@@ -257,7 +190,7 @@ p {
     width: 260px;
     height: 260px;
 
-    border-radius: 8px;
+    border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
 
@@ -266,9 +199,8 @@ p {
     transition: 0.3s border-color;
 }
 .project:hover {
-    /* box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.05); */
     text-decoration: none;
-    border-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.25);
 }
 
 .project-corner {
@@ -305,14 +237,6 @@ p {
     color: rgb(70, 70, 70);
 }
 
-.project-id {
-    position: absolute;
-    bottom: 27px; right: 28px;
-
-    font-size: 10px;
-    color: rgb(120, 120, 120);
-}
-
 .project-description {
     margin-top: 20px;
 
@@ -322,16 +246,24 @@ p {
     text-align: left;
 }
 
-.project-category {
+.project-footer {
     position: absolute;
-    top: 25px;
-    right: 28px;
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    right: 0;
+}
 
-    font-size: 12px;
+.project-id {
+    position: absolute;
+    bottom: 27px; right: 28px;
+
+    font-size: 10px;
+    color: rgb(120, 120, 120);
 }
 
 /**
- * .lab-header
+ * Lab
  */
 
 .lab-header {
@@ -339,13 +271,29 @@ p {
     justify-content: space-between;
     align-items: center;
 
-    margin-top: 40px;
+    margin: 40px 100px 0 100px;
 }
 
 .lab-header-info {
     max-width: 400px;
 
     margin-right: 40px;
+}
+
+.lab-header-title {
+    margin-bottom: 14px;
+
+    font-size: 32px;
+    line-height: 1.5;
+    font-family: 'Questrial', sans-serif;
+    color: #377dff;
+}
+
+.lab-header-subtitle {
+    font-size: 20px;
+    color: rgb(80, 80, 80);
+    line-height: 1.75;
+    font-family: 'Questrial', sans-serif;
 }
 
 .lab-header-buttons {
@@ -374,16 +322,12 @@ p {
 .lab-header-button_red { color: #ff7474; background: rgba(255, 55, 125, 0.1); }
 .lab-header-button_red:hover { background: #ff8282; }
 
-/**
- * .lab-sections
- */
-
 .lab-sections {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    margin: 80px -100px;
+    margin: 60px 0;
 }
 
 .lab-section {
@@ -391,7 +335,11 @@ p {
 
     margin: 60px 100px;
 }
-.lab-section_large { width: 100%; }
+.lab-section_large { width: 1000px; }
+
+.lab-section_about {
+    margin-bottom: 120px;
+}
 
 .lab-section-title {
     margin-bottom: 40px;
@@ -406,15 +354,16 @@ p {
 }
 
 .lab-spec {
-    margin-bottom: 26px;
+    padding: 24px 0;
+    
+    border-top: 1px solid rgb(240, 240, 240);
 }
+.lab-spec:last-child { border-bottom: 1px solid rgb(240, 240, 240); }
 
 .lab-spec-name {
     display: inline-block;
     position: relative;
     top: 2px;
-
-    margin-bottom: 14px;
 
     font-size: 15px;
     color: rgb(80, 80, 80);
@@ -425,14 +374,13 @@ p {
 
     font-size: 18px;
 }
-.lab-spec-value .experiment-label { position: relative; top: 0; right: 0; font-size: 18px; }
-.lab-spec-value_alert { color: #377dff; }
 
 .lab-color {
     float: left;
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
 
+    margin-top: -4px;
     margin-right: 18px;
 
     border: 1px solid rgb(200, 200, 200);
@@ -440,6 +388,7 @@ p {
 }
 
 .lab-category {
+    margin-top: -8px;
     padding: 8px 12px;
 
     font-size: 16px;
@@ -449,40 +398,38 @@ p {
 }
 
 .lab-progress {
-    position: relative;
-    z-index: 50;
+    width: 180px;
+    height: 40px;
 
-    width: 160px;
-    height: 32px;
+    margin-top: -10px;
+
+    text-align: right;
 
     border-radius: 4px;
-    background: rgb(240, 240, 240);
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(220, 220, 220);
 }
 
 .lab-progress-bar {
-    position: relative;
-    z-index: -5;
-
     width: 50%;
     height: 100%;
 
-    background: #377dff;
-    border-radius: 4px;
-    opacity: 0.8;
+    background: rgb(230, 230, 230);
 }
 
 .lab-progress-value {
     position: relative;
-    top: -23px;
-    left: 10px;
+    top: -27px;
+    right: 14px;
 
-    color: #fff;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .lab-checkbox {
     width: 30px;
     height: 30px;
+
+    margin-top: -4px;
 
     border: 1px solid rgb(220, 220, 220);
     border-radius: 4px;
@@ -554,17 +501,23 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
 * Mediaqueries
 */
 
-@media screen and (max-width: 600px) {
-    /* Disable lab grid */
-    .wrapper_lab {
-        width: 100%;
+@media screen and (max-width: 1000px) {
+    .wrapper_narrow {
+        width: 80%;
     }
-    .lab-projects {
-        display: block;
+    .lab-sections {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Center projects cuboid */
+    .projects-section {
+        justify-content: center;
     }
 
     /* Make lab sections use full width */
-    .lab-sections {
+    .lab-header {
         margin-left: 0;
         margin-right: 0;
     }
@@ -580,9 +533,9 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
         display: block;
     }
     .lab-header-buttons {
-        margin-top: 60px;
+        margin-top: 40px;
 
-        text-align: center;
+        text-align: left;
     }
     .lab-header-button {
         margin: 10px 0;
