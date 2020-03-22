@@ -35,21 +35,11 @@
         @endif
     </div>
 
-    <div class="lab-sections">
-
-        @if (count($carousel) == 1)
-            <div class="lab-section lab-section_large">
-                <div class="lab-section-title">Screenshot</div>
-
-                <img src="{{ $project->screenshot_url }}" class="lab-screenshot" alt="lab-screenshot">
-            </div>
-        @endif
-
-    </div>
-
 </div>
 
-@if (count($carousel) > 1)
+@if (count($carousel) == 1)
+    <img src="{{ $project->screenshot_url }}" class="lab-screenshot" alt="lab-screenshot">
+@elseif (count($carousel) > 1)
     <div class="lab-carousel owl-carousel owl-theme">
         @foreach($carousel as $image)
             <img src="{{ $image }}" class="lab-carousel-item" alt="lab-carousel-item">

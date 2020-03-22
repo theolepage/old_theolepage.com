@@ -33,21 +33,11 @@
         <?php endif; ?>
     </div>
 
-    <div class="lab-sections">
-
-        <?php if(count($carousel) == 1): ?>
-            <div class="lab-section lab-section_large">
-                <div class="lab-section-title">Screenshot</div>
-
-                <img src="<?php echo e($project->screenshot_url); ?>" class="lab-screenshot" alt="lab-screenshot">
-            </div>
-        <?php endif; ?>
-
-    </div>
-
 </div>
 
-<?php if(count($carousel) > 1): ?>
+<?php if(count($carousel) == 1): ?>
+    <img src="<?php echo e($project->screenshot_url); ?>" class="lab-screenshot" alt="lab-screenshot">
+<?php elseif(count($carousel) > 1): ?>
     <div class="lab-carousel owl-carousel owl-theme">
         <?php $__currentLoopData = $carousel; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $image): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <img src="<?php echo e($image); ?>" class="lab-carousel-item" alt="lab-carousel-item">
