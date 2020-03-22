@@ -56,7 +56,7 @@ p {
 **/
 
 .header {
-	padding: 32px 0;
+	padding: 34px 0;
 }
 
 .header-name {
@@ -77,7 +77,7 @@ p {
 	float: right;
 }
 
-.header-nav-back {
+.header-nav-back-icon {
     position: relative;
     top: 4px;
     width: 16px;
@@ -87,7 +87,7 @@ p {
 
     transition: fill 0.3s;
 }
-.header-nav-item:hover .header-nav-back {
+.header-nav-item:hover .header-nav-back-icon {
     fill: rgb(0, 0, 0);
 }
 
@@ -153,6 +153,7 @@ p {
     line-height: 1.75;
     font-family: 'Questrial', sans-serif;
 }
+.heading p { margin-top: 10px; }
 
 .emphasize {
     color: #377dff;
@@ -165,6 +166,7 @@ p {
 .projects-title {
     font-size: 22px;
     color: rgb(60, 60, 60);
+    line-height: 1.5;
     font-family: 'Questrial', sans-serif;
 }
 
@@ -424,7 +426,7 @@ p {
     width: 50%;
     height: 100%;
 
-    background: rgb(245, 245, 245);
+    background: rgb(235, 235, 235);
 }
 
 .lab-progress-value {
@@ -517,6 +519,15 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
 }
 
 @media screen and (max-width: 600px) {
+    /* Reduce width of 'go back' item in header */
+    .header-nav-back-text {
+        display: none;
+    }
+    .header-nav-back-icon {
+        margin-right: 0;
+    }
+
+    /* Put the link behind the message */
     .internship a {
         display: block;
 
@@ -553,6 +564,8 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
         text-align: left;
     }
     .lab-header-button {
+        width: 100%;
+
         margin: 10px 0;
     }
 }

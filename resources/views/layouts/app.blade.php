@@ -37,10 +37,14 @@
             <div class="header-nav">
                 @if (Route::currentRouteName() === 'projects.show')
                     <a href="/" class="header-nav-item">
-                        <svg class="header-nav-back" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-                            <path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z"/>
-                        </svg>
-                        Laboratory
+                        
+                        <div class="header-nav-back">
+                            <svg class="header-nav-back-icon" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+                                <path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z"/>
+                            </svg>
+                            <span class="header-nav-back-text">Laboratory</span>
+                        </div>
+                        
                     </a>
                 @endif
             </div>

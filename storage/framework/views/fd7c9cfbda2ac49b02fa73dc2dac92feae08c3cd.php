@@ -66,8 +66,8 @@
                     </div>
                 </div>
                 <div class="resume-text">
-                    - Currently working on a prototype of a self-driving car to compete the <a href="https://www.roboracingleague.com/">Robo Racing Cup</a> every month.<br />
-                    - Watching and implementing new methods and papers in the field of artificial intelligence.
+                    Currently working on a prototype of a self-driving car to compete the French <a href="https://www.roboracingleague.com/">DIY Robocars</a> every month.<br />
+                    Reading and implementing new methods and papers in the field of artificial intelligence.
                 </div>
             </div>
             <div class="resume-experience-image">
@@ -93,8 +93,8 @@
                     </div>
                 </div>
                 <div class="resume-text">
-                    - Teaching C programming language to second year students through weekly graded practicals.<br />
-                    - Worked on a web app to let other assistants test student projects and evaluate them.
+                    Teaching C programming language to second year students through weekly graded practicals.<br />
+                    Worked on a web app to let other assistants test student projects and evaluate them.
                 </div>
             </div>
             <div class="resume-experience-image">
@@ -122,9 +122,9 @@
                 </div>
             </div>
             <div class="resume-text">
-                - Courses: Linear algebra, Formal language, Programming, Computer architecture/networks, Probabilities, Statistics<br />
-                - First three years of the program were taught in English as I am part of the international section.<br />
-                - Learnt the value of hard work and self-discipline through various challenging projects.
+                Learnt the value of hard work and self-discipline through various challenging projects.<br />
+                First three years of the program were taught in English as I am part of the international section.<br />
+                Courses: Linear algebra, Formal language, Programming, Computer architecture/networks, Probabilities, Statistics, ...
             </div>
         </div>
 
@@ -144,8 +144,8 @@
                 </div>
             </div>
             <div class="resume-text">
-                - Courses: Discrete mathematics, Software design, Graphics programming, Computer networks<br />
-                - Joined a startup during a Techstars Startup Weekend and worked on a web app matching users with health providers.
+                Courses: Discrete mathematics, Software design, Graphics programming, Computer networks.<br />
+                Joined a startup during a Techstars Startup Weekend and worked on a web app matching users with health providers.
             </div>
         </div>
     </div>
@@ -157,16 +157,16 @@
             <div class="resume-col">
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
-                        <img class="resume-icon" src="/images/icon-github.svg" alt="icon-github">
-                        <a href="https://github.com/NoneOfAllOfTheAbove/ocr">An Optical Character Recognition software</a>
+                        <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
+                        <a href="/lab/ocr">An Optical Character Recognition software</a>
                     </div>
                     <div class="resume-text">Led a team during three months with the aim of creating a software, based on a neural network made from scratch, able to extract text from images.</div>
                 </div>
 
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
-                        <img class="resume-icon" src="/images/icon-github.svg" alt="icon-github">
-                        <a href="https://github.com/AllOfTheAbove/cant-stop-driving">Can't Stop Driving</a>
+                        <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
+                        <a href="/lab/cant-stop-driving">Can't Stop Driving</a>
                     </div>
                     <div class="resume-text">Made a 3D multiplayer game built with Unity for a school project. It was chosen by a jury to be presented, during communication, events to new students.</div>
                 </div>
@@ -175,8 +175,8 @@
             <div class="resume-col">
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
-                        <img class="resume-icon" src="/images/icon-github.svg" alt="icon-github">
-                        <a href="https://github.com/theolepage/ember-classification">Recruitment project on EMBER dataset</a>
+                        <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
+                        <a href="/lab/ember-classification">Recruitment project on EMBER dataset</a>
                     </div>
                     <div class="resume-text">
                         Developped machine learning methods (k-means, deep neural networks, ...) to classify a dataset of malware programs.
@@ -186,8 +186,8 @@
 
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
-                        <img class="resume-icon" src="/images/icon-github.svg" alt="icon-github">
-                        <a href="https://github.com/theolepage/42sh">A POSIX shell: 42sh</a>
+                        <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
+                        <a href="/lab/42sh">A POSIX shell: 42sh</a>
                     </div>
                     <div class="resume-text">Implemented a shell in 4 weeks in C by complying with the Command Shell Language standard. Our project is ready to use and is able to parse Bash grammar.</div>
                 </div>
@@ -251,12 +251,12 @@
                         Sailing and windsurf
                     </div>
                     <div class="resume-passion">
-                        <img class="resume-icon resume-passion-icon" src="/images/icon-travel.svg" alt="icon-travel">
-                        Traveling (+10 countries)
-                    </div>
-                    <div class="resume-passion">
                         <img class="resume-icon resume-passion-icon" src="/images/icon-ecology.svg" alt="icon-ecology">
                         Sustainable development
+                    </div>
+                    <div class="resume-passion">
+                        <img class="resume-icon resume-passion-icon" src="/images/icon-travel.svg" alt="icon-travel">
+                        Traveling (+10 countries)
                     </div>
                 </div>
             </div>
