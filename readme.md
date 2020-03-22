@@ -6,19 +6,15 @@ My personal website.
 
 ## To-Do
 
-### v2.5
-
-- [ ] Update resume / projects info
-
 ### v3.0
 
-## Technologies
+#### Technologies
 
 - [ ] Frontend: switch to React
 - [ ] Backend: replace mysql by static files
 - [ ] Hosting: docker container + auto deployment
 
-## Features
+#### Features
 
 - [ ] Create about page (short description, link to resume, contact)
 - [ ] Lab: search and filters
