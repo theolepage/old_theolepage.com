@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>@yield('title')</title>
+    <title><?php echo $__env->yieldContent('title'); ?></title>
     <meta name="description" content="Hello, I am Theo, a computer science student. Welcome to my laboratory.">
 
     <meta name="turbolinks-cache-control" content="no-cache">
@@ -13,9 +13,9 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="/images/icon.png">
 
-    <link rel="stylesheet" href="{{ asset('css/resume.css') }}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/resume.css')); ?>">
     <style type="text/css" media="print">
-    @page {
+    @page  {
         size: auto;
         margin: 0;
     }
@@ -29,7 +29,7 @@
 
 <div class="container">
 
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
 
 </div>
 

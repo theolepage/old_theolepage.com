@@ -143,13 +143,27 @@ function createActivityGraph() {
 }
 
 function init() {
-  // Contact
-  autosize(document.querySelector('.contact-message')); // Lab
-
+  // Lab
   timeago().render(document.querySelectorAll('.timeago'));
   createActivityGraph();
   document.querySelectorAll('code').forEach(function (element) {
     hljs.highlightBlock(element);
+  });
+  $('.owl-carousel').owlCarousel({
+    center: true,
+    loop: false,
+    margin: 10,
+    autoplay: false,
+    autoplayTimeout: 6000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      }
+    }
   });
 }
 
@@ -167,7 +181,7 @@ init();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/theo/Documents/Lab/thdoteo.com/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/theo/Documents/Lab/theolepage.com/resources/js/app.js */"./resources/js/app.js");
 
 
 /***/ })

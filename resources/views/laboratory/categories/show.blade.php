@@ -1,7 +1,3 @@
-<span style="color: {{ $project->category->color }}">
-    @if (isset($lab))
-        {{ strtoupper($project->category->name) }}
-    @else
-        {{ strtoupper($project->category->name) }}
-    @endif
-</span>
+<div class="lab-category" style="color: {{ $project->category->color }}; border-color: {{ $project->category->color }}">
+    {{ $project->category->name }}
+</div>

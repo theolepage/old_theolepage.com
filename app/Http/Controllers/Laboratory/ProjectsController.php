@@ -38,8 +38,14 @@ class ProjectsController extends Controller
             $activityGraph->create();
         }
 
+        // Create list of images for carousel
+        $carousel = [];
+        if ($project->screenshot_url)
+            $carousel = explode(' ', $project->screenshot_url);
+
         return view('laboratory.projects.show', [
             'project' => $project,
+            'carousel' => $carousel,
             'activityGraph' => $activityGraph
         ]);
     }

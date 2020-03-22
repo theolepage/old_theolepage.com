@@ -1,6 +1,6 @@
-# thdoteo.com
+# theolepage.com
 
-![Screenshot](https://raw.githubusercontent.com/thdoteo/thdoteo.com/master/docs/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/theolepage/theolepage.com/master/docs/screenshot.png)
 
 My personal website.
 
@@ -8,36 +8,18 @@ My personal website.
 
 ### v2.5
 
-#### Homepage
-
-- [ ] Create lab header
-- [ ] Project cards: design
-- [ ] Project cards: animation
-
-#### Lab
-
-- [ ] Update project database
-- [ ] Progress -> progress bar
-- [ ] Yes -> checkboxes
-- [ ] Color -> color circle
-
-#### About
-
-- [ ] Create simple about page (short text, link to resume/contact)
-
-#### Resume
-
-- [ ] icon project open source
-- [ ] bold text / labels
-- [ ] icon epita
-- [ ] check content
-- [ ] personalize style
-- [ ] print dimensions
+- [ ] Update resume / projects info
 
 ### v3.0
 
+## Technologies
+
 - [ ] Frontend: switch to React
 - [ ] Backend: replace mysql by static files
-- [ ] Hosting: docker container + heroku/digitalocean
+- [ ] Hosting: docker container + auto deployment
+
+## Features
+
+- [ ] Create about page (short description, link to resume, contact)
 - [ ] Lab: search and filters
 - [ ] Lab: modular sections

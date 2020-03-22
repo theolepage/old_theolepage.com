@@ -4,13 +4,12 @@
 
 @section('content')
 
-<div class="lab wrapper">
+<div class="wrapper wrapper_narrow">
 
     <div class="lab-header">
-
         <div class="lab-header-info">
-            <div class="heading-title" style="color: {{ $project->color }}">{{ $project->getTitle() }}</div>
-            <div class="heading-subtitle">{{ $project->description }}</div>
+            <div class="lab-header-title" style="color: {{ $project->color }}">{{ $project->getTitle() }}</div>
+            <div class="lab-header-subtitle">{{ $project->description }}</div>
         </div>
 
         @if (!empty($project->website_url) || !empty($project->github_repo_name))
@@ -36,28 +35,21 @@
         @endif
     </div>
 
+</div>
+
+@if (count($carousel) == 1)
+    <img src="{{ $project->screenshot_url }}" class="lab-screenshot" alt="lab-screenshot">
+@elseif (count($carousel) > 1)
+    <div class="lab-carousel owl-carousel owl-theme">
+        @foreach($carousel as $image)
+            <img src="{{ $image }}" class="lab-carousel-item" alt="lab-carousel-item">
+        @endforeach
+    </div>
+@endif
+
+<div class="wrapper wrapper_narrow">
+
     <div class="lab-sections">
-
-        @if ($project->youtube_video_id)
-            <div class="lab-section lab-section_large">
-
-                <div class="lab-section-title">Video</div>
-
-                <div class="lab-video">
-                    <iframe
-                        width="560" height="315"
-                        src="https://www.youtube.com/embed/{{ $project->youtube_video_id }}?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist={{ $project->youtube_video_id }}"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        @elseif ($project->screenshot_url)
-            <div class="lab-section lab-section_large">
-                <div class="lab-section-title">Screenshot</div>
-
-                <img src="{{ $project->screenshot_url }}" class="lab-screenshot" alt="lab-screenshot">
-            </div>
-        @endif
 
         <div class="lab-section">
             <div class="lab-section-title">General</div>
@@ -80,7 +72,10 @@
             </div>
             <div class="lab-spec">
                 <div class="lab-spec-name">Color</div>
-                <div class="lab-spec-value">{{ $project->getColor() }}</div>
+                <div class="lab-spec-value">
+                    <div class="lab-color" style="background: {{ $project->getColor() }};"></div>
+                    {{ $project->getColor() }}
+                </div>
             </div>
         </div>
 
@@ -94,6 +89,18 @@
             <div class="lab-section-title">Project</div>
 
             <div class="lab-spec">
+                <div class="lab-spec-name">Status</div>
+                <div class="lab-spec-value @if ($project->status != 0) lab-spec-value_alert @endif">
+                    @if ($project->status == 1)
+                        Under development
+                    @elseif ($project->status == 0)
+                        Finished
+                    @elseif ($project->status == 2)
+                        Paused
+                    @endif
+                </div>
+            </div>
+            <div class="lab-spec">
                 <div class="lab-spec-name">Creation date</div>
                 <div class="lab-spec-value">{{ $project->getCreationDate() }}</div>
             </div>
@@ -103,19 +110,10 @@
                     @if ($project->progress < 0)
                         Ongoing
                     @else
-                        {{ $project->progress }}%
-                    @endif
-                </div>
-            </div>
-            <div class="lab-spec">
-                <div class="lab-spec-name">Status</div>
-                <div class="lab-spec-value @if ($project->status != 0) lab-spec-value_alert @endif">
-                    @if ($project->status == 1)
-                        Under development
-                    @elseif ($project->status == 0)
-                        Finished
-                    @elseif ($project->status == 2)
-                        Paused
+                        <div class="lab-progress">
+                            <div class="lab-progress-bar" style="width: {{ $project->progress }}%"></div>
+                            <div class="lab-progress-value">{{ $project->progress }}%</div>
+                        </div>
                     @endif
                 </div>
             </div>
@@ -132,7 +130,11 @@
 
             <div class="lab-spec">
                 <div class="lab-spec-name">Open source</div>
-                <div class="lab-spec-value">@if (empty($project->github_repo_name)) No @else Yes @endif</div>
+                <div class="lab-spec-value">
+                    <div class="lab-checkbox">
+                        @if (!empty($project->github_repo_name))  <img class="lab-checkbox-mark" src="/images/icon-check.svg" alt="icon-check"> @endif
+                    </div>
+                </div>
             </div>
             <div class="lab-spec">
                 <div class="lab-spec-name">Technologies</div>
@@ -168,6 +170,35 @@
             @endif
         </div>
 
+        @if ($project->youtube_video_id)
+            <div class="lab-section lab-section_large">
+
+                <div class="lab-section-title">Video</div>
+
+                <div class="lab-video">
+                    <iframe
+                        width="560" height="315"
+                        src="https://www.youtube.com/embed/{{ $project->youtube_video_id }}?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist={{ $project->youtube_video_id }}"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        @endif
+
+        @if ($project->about)
+            <div class="lab-section lab-section_large lab-section_about">
+                <div class="lab-section-title">About</div>
+
+                <div class="lab-section-content">
+                    @if (empty($project->about))
+                        None
+                    @else
+                        {!! $project->getAbout() !!}
+                    @endif
+                </div>
+            </div>
+        @endif
+
         <div class="lab-section">
             <div class="lab-section-title">Team</div>
 
@@ -182,20 +213,6 @@
             <div class="lab-section">
                 <div class="lab-section-title">Activity</div>
                 <canvas data-graph="{{ json_encode($activityGraph) }}" id="lab-activity" width="50%" height="25"></canvas>
-            </div>
-        @endif
-
-        @if ($project->about)
-            <div class="lab-section lab-section_large">
-                <div class="lab-section-title">About</div>
-
-                <div class="lab-section-content">
-                    @if (empty($project->about))
-                        None
-                    @else
-                        {!! $project->getAbout() !!}
-                    @endif
-                </div>
             </div>
         @endif
     </div>
