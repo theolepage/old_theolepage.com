@@ -202,23 +202,27 @@
         <div class="resume-cols">
             <div class="resume-col">
                 <div class="resume-item">
-                    <div class="resume-subsubtitle">Programming languages / softwares</div>
-                    <div class="resume-label">Algorithmics</div>
+                    <div class="resume-subsubtitle">Programming languages / technologies</div>
                     <div class="resume-label">C</div>
                     <div class="resume-label">C++</div>
                     <div class="resume-label">C#</div>
                     <div class="resume-label">Java</div>
                     <div class="resume-label">Python</div>
-                    <div class="resume-label">OCaml / Haskell</div>
+                    <div class="resume-label">OCaml/Haskell</div>
+                    <div class="resume-label">HTML/CSS</div>
                     <div class="resume-label">PHP</div>
                     <div class="resume-label">JavaScript</div>
+                    <div class="resume-label">SQL</div>
+                    <div class="resume-label">Git</div>
+                    <div class="resume-label">Linux/Bash</div>
                 </div>
 
                 <div class="resume-item">
-                    <div class="resume-subsubtitle">Miscellaneous skills</div>
-                    <div class="resume-label">Project management</div>
-                    <div class="resume-label">Git</div>
-                    <div class="resume-label">Linux / Bash</div>
+                    <div class="resume-subsubtitle">Miscellaneous</div>
+                    <div class="resume-label">Algorithmics</div>
+                    <div class="resume-label">Machine Learning</div>
+                    <div class="resume-label">Software Engineering</div>
+                    <div class="resume-label">Project Management</div>
                     <div class="resume-label">LaTex</div>
                 </div>
             </div>
@@ -226,16 +230,34 @@
             <div class="resume-col">
                 <div class="resume-item">
                     <div class="resume-subsubtitle">Certificates</div>
-                    <div class="resume-label">TOEIC 865</div>
                     <div class="resume-label">Driving license</div>
                     <div class="resume-label">Sailing instructor diploma</div>
                 </div>
 
+                <div class="resume-item resume-floating">
+                    <div class="resume-subsubtitle">Languages</div>
+                    <div class="resume-label">English (TOEIC 865)</div>
+                    <div class="resume-label">French</div>
+                </div>
+
                 <div class="resume-item">
-                    <div class="resume-subsubtitle">Passions</div>
-                    <div class="resume-label">Sailing and windsurf</div>
-                    <div class="resume-label">Science and artificial intelligence</div>
-                    <div class="resume-label">Traveling (USA, England, Mexico, Senegal, Jordan, ...)</div>
+                    <div class="resume-subsubtitle">Passions and interests</div>
+                    <div class="resume-passion">
+                        <img class="resume-icon resume-passion-icon" src="/images/icon-science.svg" alt="icon-science">
+                        Science and AI
+                    </div>
+                    <div class="resume-passion">
+                        <img class="resume-icon resume-passion-icon" src="/images/icon-wave.svg" alt="icon-wave">
+                        Sailing and windsurf
+                    </div>
+                    <div class="resume-passion">
+                        <img class="resume-icon resume-passion-icon" src="/images/icon-travel.svg" alt="icon-travel">
+                        Traveling (+10 countries)
+                    </div>
+                    <div class="resume-passion">
+                        <img class="resume-icon resume-passion-icon" src="/images/icon-ecology.svg" alt="icon-ecology">
+                        Sustainable development
+                    </div>
                 </div>
             </div>
         </div>
