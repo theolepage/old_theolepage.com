@@ -145,6 +145,13 @@ p {
     border-radius: 0 6px 6px 6px;
 }
 
+.internship-icon {
+    position: relative;
+    top: 4px;
+
+    margin-right: 24px;
+}
+
 .heading {
     margin-top: 40px;
 
@@ -528,7 +535,12 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
     }
 
     /* Put the link behind the message */
-    .internship a {
+    .internship-icon {
+        display: block;
+    
+        margin: 0 auto 16px auto;
+    }
+    .internship-link {
         display: block;
 
         margin-top: 8px;
