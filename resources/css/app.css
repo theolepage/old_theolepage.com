@@ -56,11 +56,15 @@ p {
 **/
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 	padding: 34px 0;
 }
 
 .header-name {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     color: rgb(30, 30, 30);
     font-family: 'Questrial';
@@ -71,44 +75,31 @@ p {
 }
 
 .header-nav {
-	position: relative;
-    top: -14px;
-
-	float: right;
+	
 }
 
 .header-nav-back-icon {
     position: relative;
     top: 4px;
-    width: 16px;
+    width: 14px;
     fill: rgb(100, 100, 100);
 
-    margin-right: 4px;
+    margin-right: 8px;
 
     transition: fill 0.3s;
 }
 .header-nav-item:hover .header-nav-back-icon {
-    fill: rgb(0, 0, 0);
+    fill: rgb(30, 30, 30);
 }
 
 .header-nav-item {
-    position: relative;
-    top: -2px;
-	display: inline-block;
-
-	margin-left: 2px;
-	padding: 18px 20px;
-
 	color: rgb(100, 100, 100);
 	font-family: 'Questrial', sans-serif;
-	font-size: 18px;
-
-	border-radius: 6px;
+	font-size: 16px;
 }
 .header-nav-item:hover {
 	text-decoration: none;
-	background: rgb(245, 245, 245);
-    color: #000;
+    color: rgb(30, 30, 30);
 }
 
 /**
@@ -130,32 +121,36 @@ p {
  */
 
 .internship {
-    max-width: 1200px;
+    display: flex;
+    max-width: 1040px;
 
-    text-align: center;
-    margin: 20px auto 80px auto;
-    padding: 24px 36px;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 0 auto 60px auto;
+    padding: 22px 32px;
 
     color: rgb(60, 60, 60);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.75;
 
     background: #E9F1FE;
-    border-bottom: 4px solid #377dff;
-    border-radius: 0 6px 6px 6px;
+    border: 2px solid rgb(219, 233, 255);
+    border-radius: 8px;
+}
+
+.internship-emphasize {
+    text-decoration: underline;
 }
 
 .internship-icon {
-    position: relative;
-    top: 4px;
-
-    margin-right: 24px;
+    margin: 2px 26px 0 0;
 }
 
 .heading {
-    margin-top: 40px;
+    margin-top: 30px;
 
-    font-size: 28px;
+    font-size: 26px;
     color: rgb(40, 40, 40);
     line-height: 1.75;
     font-family: 'Questrial', sans-serif;
@@ -171,7 +166,7 @@ p {
 }
 
 .projects-title {
-    font-size: 22px;
+    font-size: 20px;
     color: rgb(60, 60, 60);
     line-height: 1.5;
     font-family: 'Questrial', sans-serif;
@@ -193,11 +188,11 @@ p {
     flex-direction: column;
     position: relative;
 
-    margin: 50px 50px 0 0;
-    padding: 40px 30px;
+    margin: 40px 40px 0 0;
+    padding: 36px 28px;
 
-    width: 260px;
-    height: 260px;
+    width: 234px;
+    height: 234px;
 
     border-radius: 6px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -209,14 +204,14 @@ p {
 }
 .project:hover {
     text-decoration: none;
-    border-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .project-corner {
     width: 16px;
     height: 16px;
     position: absolute;
-    bottom: 25px; left: 30px;
+    bottom: 20px; left: 28px;
 }
 
 .project-corner-wip {
@@ -242,14 +237,14 @@ p {
 }
 
 .project-title {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(70, 70, 70);
 }
 
 .project-description {
     margin-top: 20px;
 
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(80, 80, 80);
     line-height: 1.7em;
     text-align: left;
@@ -265,7 +260,7 @@ p {
 
 .project-id {
     position: absolute;
-    bottom: 27px; right: 28px;
+    bottom: 22px; right: 26px;
 
     font-size: 10px;
     color: rgb(120, 120, 120);
@@ -292,14 +287,14 @@ p {
 .lab-header-title {
     margin-bottom: 14px;
 
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.5;
     font-family: 'Questrial', sans-serif;
     color: #377dff;
 }
 
 .lab-header-subtitle {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(80, 80, 80);
     line-height: 1.75;
     font-family: 'Questrial', sans-serif;
@@ -311,13 +306,13 @@ p {
 
 .lab-header-button {
     display: inline-block;
-    width: 190px;
+    width: 170px;
 
-    margin: 5px 0 5px 20px;
-    padding: 28px 0;
+    margin: 5px 0 5px 14px;
+    padding: 26px 0;
 
     color: #377dff;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
 
     background: rgba(55, 125, 255, 0.1);
@@ -347,11 +342,14 @@ p {
 .lab-section_about {
     margin-bottom: 120px;
 }
+.lab-section_about img {
+    width: 100%;
+}
 
 .lab-section-title {
     margin-bottom: 40px;
 
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     font-family: 'Questrial', sans-serif;
 }
@@ -361,7 +359,7 @@ p {
 }
 
 .lab-spec {
-    padding: 24px 0;
+    padding: 22px 0;
     
     border-top: 1px solid rgb(240, 240, 240);
 }
@@ -370,16 +368,16 @@ p {
 .lab-spec-name {
     display: inline-block;
     position: relative;
-    top: 2px;
+    top: -1px;
 
-    font-size: 15px;
-    color: rgb(80, 80, 80);
+    font-size: 12px;
+    color: rgb(100, 100, 100);
 }
 
 .lab-spec-value {
     float: right;
 
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .lab-screenshot {
@@ -396,10 +394,10 @@ p {
 
 .lab-color {
     float: left;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
 
-    margin-top: -4px;
+    margin-top: -3px;
     margin-right: 18px;
 
     border: 1px solid rgb(200, 200, 200);
@@ -410,17 +408,17 @@ p {
     margin-top: -8px;
     padding: 8px 12px;
 
-    font-size: 16px;
+    font-size: 14px;
 
     border: 1px solid rgb(200, 200, 200);
     border-radius: 4px;
 }
 
 .lab-progress {
-    width: 180px;
-    height: 40px;
+    width: 160px;
+    height: 32px;
 
-    margin-top: -10px;
+    margin-top: -6px;
 
     text-align: right;
 
@@ -438,28 +436,28 @@ p {
 
 .lab-progress-value {
     position: relative;
-    top: -27px;
+    top: -22px;
     right: 14px;
 
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .lab-checkbox {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
 
-    margin-top: -4px;
+    margin-top: -2px;
 
     border: 1px solid rgb(220, 220, 220);
     border-radius: 4px;
 }
 
 .lab-checkbox-mark {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 
-    margin-left: 3px;
-    margin-top: 4px;
+    margin-left: 2px;
+    margin-top: 3px;
 }
 
 .lab-video {
@@ -479,14 +477,15 @@ p {
 
 .lab-contributor {
     display: inline-block;
-    width: 120px;
+    width: 116px;
 
     text-align: center;
 
     margin: 0 10px 10px 0;
-    padding: 22px 22px;
+    padding: 18px 22px;
 
     border: 1px solid rgb(240, 240, 240);
+    border-radius: 4px;
 
     transition: border 0.3s;
 }
@@ -497,6 +496,7 @@ a.lab-contributor:hover { text-decoration: none; border: 1px solid rgb(220, 220,
 
     margin-top: 4px;
 
+    font-size: 14px;
     color: rgb(100, 100, 100);
 
     transition: color 0.3s;
@@ -516,9 +516,9 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
 * Mediaqueries
 */
 
-@media screen and (max-width: 1000px) {
-    .wrapper {
-        width: 80%;
+@media screen and (max-width: 1200px) {
+    .wrapper_narrow {
+        width: 90%;
     }
     .lab-sections {
         justify-content: center;
@@ -526,6 +526,10 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
 }
 
 @media screen and (max-width: 600px) {
+    .wrapper {
+        width: 80%;
+    }
+
     /* Reduce width of 'go back' item in header */
     .header-nav-back-text {
         display: none;
@@ -535,11 +539,6 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
     }
 
     /* Put the link behind the message */
-    .internship-icon {
-        display: block;
-    
-        margin: 0 auto 16px auto;
-    }
     .internship-link {
         display: block;
 

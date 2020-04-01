@@ -6,8 +6,10 @@
 
     <div class="internship">
         <img class="internship-icon" src="/images/icon-internship.svg">
-        I am currently seeking an internship in Software Engineering starting in September 2020.
-        <a data-turbolinks="false" class="internship-link" href="/resume">Learn more by reading my resume</a>
+        <p>
+            I am currently seeking an <span class="internship-emphasize">internship in Software Engineering</span> starting in September 2020.
+            <a data-turbolinks="false" class="internship-link" href="/resume">Learn more by reading my resume</a>
+        </p>
     </div>
 
     <div class="heading">

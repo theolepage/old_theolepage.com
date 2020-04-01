@@ -19,7 +19,7 @@
                         class="lab-header-button lab-header-button_green"
                         target="_blank" rel="noopener"
                         href="{{ $project->website_url }}">
-                        Website
+                        Take a look
                     </a>
                 @endif
 
@@ -28,7 +28,7 @@
                         class="lab-header-button"
                         target="_blank" rel="noopener"
                         href="https://github.com/{{ $project->github_repo_username }}/{{ $project->github_repo_name }}">
-                        View on GitHub
+                        Code repository
                     </a>
                     @endif
             </div>
