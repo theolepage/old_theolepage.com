@@ -55,12 +55,12 @@ p {
  ** Header  
 **/
 
-.header {
+.header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-	padding: 34px 0;
+    padding: 34px 0;
 }
 
 .header-name {
@@ -122,20 +122,20 @@ p {
 
 .internship {
     display: flex;
-    max-width: 1040px;
+    max-width: 860px;
 
     justify-content: center;
     align-items: flex-start;
 
     margin: 0 auto 60px auto;
-    padding: 22px 32px;
+    padding: 22px 26px;
 
     color: rgb(60, 60, 60);
     font-size: 16px;
     line-height: 1.75;
 
     background: #E9F1FE;
-    border: 2px solid rgb(219, 233, 255);
+    border-bottom: 1px solid rgb(219, 233, 255);
     border-radius: 8px;
 }
 
@@ -144,6 +144,8 @@ p {
 }
 
 .internship-icon {
+    width: 20px;
+
     margin: 2px 26px 0 0;
 }
 
@@ -152,7 +154,7 @@ p {
 
     font-size: 26px;
     color: rgb(40, 40, 40);
-    line-height: 1.75;
+    line-height: 1.5;
     font-family: 'Questrial', sans-serif;
 }
 .heading p { margin-top: 10px; }
@@ -162,21 +164,29 @@ p {
 }
 
 .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     margin-top: 80px;
+}
+
+.projects-section {
+    width: 50%;
+
+    margin-bottom: 80px;
 }
 
 .projects-title {
     font-size: 20px;
-    color: rgb(60, 60, 60);
+    color: rgb(100, 100, 100);
     line-height: 1.5;
     font-family: 'Questrial', sans-serif;
 }
 
-.projects-section {
+.projects-container {
     display: flex;
     flex-wrap: wrap;
-
-    margin-bottom: 80px;
 }
 
 /**
@@ -431,7 +441,7 @@ p {
     width: 50%;
     height: 100%;
 
-    background: rgb(235, 235, 235);
+    background: rgb(245, 245, 245);
 }
 
 .lab-progress-value {
@@ -519,6 +529,12 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
 @media screen and (max-width: 1200px) {
     .wrapper_narrow {
         width: 90%;
+    }
+    .projects {
+        display: block;
+    }
+    .projects-section {
+        width: 100%;
     }
     .lab-sections {
         justify-content: center;

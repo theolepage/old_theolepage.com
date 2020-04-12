@@ -19,3 +19,14 @@ My personal website.
 - [ ] Create about page (short description, link to resume, contact)
 - [ ] Lab: search and filters
 - [ ] Lab: modular sections
+
+#### New grid
+
+- Main projects: 42sh, Brainstorming, OCR, Can't Stop Driving
+- AI & Machine learning: prophecy, face-detection, ember-classification
+
+- Software and web apps: thdoteo.com, inaudible, apero, myfind, minimake, tinyprintf, void-maze
+- Frameworks: Yage, php-framework, directx-2d-framework
+
+- Tools: vagrant-webdev, docker-webdev, php-random-avatars, web-experiments, lc-3-emulator, dictionary-generator
+- Others: Tornado, TSCraft

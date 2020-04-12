@@ -236,7 +236,7 @@
 
                 <div class="resume-item resume-floating">
                     <div class="resume-subsubtitle">Languages</div>
-                    <div class="resume-label">English (TOEIC 865)</div>
+                    <div class="resume-label">English (TOEIC 905)</div>
                     <div class="resume-label">French</div>
                 </div>
 
@@ -270,4 +270,5 @@
 </div>
 
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layouts.resume', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

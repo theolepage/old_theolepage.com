@@ -238,7 +238,7 @@
 
                 <div class="resume-item resume-floating">
                     <div class="resume-subsubtitle">Languages</div>
-                    <div class="resume-label">English (TOEIC 865)</div>
+                    <div class="resume-label">English (TOEIC 905)</div>
                     <div class="resume-label">French</div>
                 </div>
 
