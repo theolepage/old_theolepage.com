@@ -84,6 +84,21 @@
             <?php echo $__env->make('laboratory.projects.cuboid', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         </div>
 
+        <?php if($project->youtube_video_id): ?>
+            <div class="lab-section lab-section_large">
+
+                <div class="lab-section-title">Video</div>
+
+                <div class="lab-video">
+                    <iframe
+                        width="560" height="315"
+                        src="https://www.youtube.com/embed/<?php echo e($project->youtube_video_id); ?>?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist=<?php echo e($project->youtube_video_id); ?>"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        <?php endif; ?>
+
         <?php if($project->about): ?>
             <div class="lab-section lab-section_large lab-section_about">
                 <div class="lab-section-title">About</div>
@@ -185,21 +200,6 @@
                 </div>
             <?php endif; ?>
         </div>
-
-        <?php if($project->youtube_video_id): ?>
-            <div class="lab-section lab-section_large">
-
-                <div class="lab-section-title">Video</div>
-
-                <div class="lab-video">
-                    <iframe
-                        width="560" height="315"
-                        src="https://www.youtube.com/embed/<?php echo e($project->youtube_video_id); ?>?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist=<?php echo e($project->youtube_video_id); ?>"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        <?php endif; ?>
 
         <div class="lab-section">
             <div class="lab-section-title">Team</div>
