@@ -213,7 +213,7 @@
 
         <?php if($project->github_repo_name): ?>
             <div class="lab-section">
-                <div class="lab-section-title">Activity</div>
+                <div class="lab-section-title">Last year activity</div>
                 <canvas data-graph="<?php echo e(json_encode($activityGraph)); ?>" id="lab-activity" width="50%" height="25"></canvas>
             </div>
         <?php endif; ?>

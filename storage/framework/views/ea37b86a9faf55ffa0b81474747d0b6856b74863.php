@@ -30,7 +30,7 @@
 
 <div class="container">
 
-    <div class="internship">
+    <div class="internship wrapper">
         <img class="internship-icon" src="/images/icon-internship.svg">
         <p>
             I am seeking an <span class="internship-emphasize">internship in Software Engineering</span> starting in September 2020.

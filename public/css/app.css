@@ -163,14 +163,11 @@ p {
 .heading p { margin-top: 10px; }
 
 .emphasize {
-    /* color: #000; */
-    margin: 0 2px;
     padding: 8px 6px;
 
     color: #000;
 
     background: #E9F1FE;
-    color: #000;
 }
 
 .projects {
@@ -179,8 +176,6 @@ p {
     justify-content: space-between;
 
     margin-top: 80px;
-
-    /* background: rgb(240, 240, 240); */
 }
 
 .projects-section {
@@ -366,7 +361,7 @@ p {
 
 .lab-section_about {
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.75;
 }
 .lab-section_about p { margin-bottom: 20px; }
 .lab-section_about img { width: 100%; }
@@ -426,7 +421,6 @@ p {
     margin-top: -3px;
     margin-right: 18px;
 
-    border: 1px solid rgb(200, 200, 200);
     border-radius: 100%;
 }
 
@@ -442,15 +436,15 @@ p {
 
 .lab-progress {
     width: 160px;
-    height: 32px;
+    height: 36px;
 
-    margin-top: -6px;
+    margin-top: -8px;
 
     text-align: right;
 
-    border-radius: 4px;
+    border-radius: 2px;
     background: rgba(0, 0, 0, 0);
-    border: 1px solid rgb(220, 220, 220);
+    border: 1px solid rgb(230, 230, 230);
 }
 
 .lab-progress-bar {
@@ -462,7 +456,7 @@ p {
 
 .lab-progress-value {
     position: relative;
-    top: -22px;
+    top: -24px;
     right: 14px;
 
     font-size: 12px;
