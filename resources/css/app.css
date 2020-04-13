@@ -139,7 +139,7 @@ p {
 }
 
 .internship-emphasize {
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .internship-icon {
@@ -152,14 +152,21 @@ p {
     margin-top: 30px;
 
     font-size: 24px;
-    color: rgb(40, 40, 40);
+    color: rgb(80, 80, 80);
     line-height: 1.5;
     font-family: 'Questrial', sans-serif;
 }
 .heading p { margin-top: 10px; }
 
 .emphasize {
-    color: #377dff;
+    /* color: #000; */
+    margin: 0 2px;
+    padding: 8px 6px;
+
+    color: #000;
+
+    background: #E9F1FE;
+    color: #000;
 }
 
 .projects {
@@ -199,14 +206,14 @@ p {
     flex-direction: column;
     position: relative;
 
-    margin: 25px 25px 0 0;
+    margin: 20px 20px 0 0;
     padding: 26px 22px;
 
-    width: 255px;
-    height: 160px;
+    width: 260px;
+    height: 155px;
 
     border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px dashed rgba(0, 0, 0, 0.1);
     background: #fff;
 
     font-family: 'Roboto', sans-serif;
@@ -254,8 +261,8 @@ p {
 }
 
 .project-description {
-    max-height: 40px;
-    overflow: hidden;
+    /* max-height: 40px;
+    overflow: hidden; */
 
     margin-top: 10px;
 
@@ -355,11 +362,11 @@ p {
 .lab-section_large { width: 1000px; }
 
 .lab-section_about {
-    margin-bottom: 120px;
+    text-align: justify;
+    line-height: 1.5;
 }
-.lab-section_about img {
-    width: 100%;
-}
+.lab-section_about p { margin-bottom: 20px; }
+.lab-section_about img { width: 100%; }
 
 .lab-section-title {
     margin-bottom: 40px;

@@ -85,6 +85,20 @@
             @include('laboratory.projects.cuboid')
         </div>
 
+        @if ($project->about)
+            <div class="lab-section lab-section_large lab-section_about">
+                <div class="lab-section-title">About</div>
+
+                <div class="lab-section-content">
+                    @if (empty($project->about))
+                        None
+                    @else
+                        {!! $project->getAbout() !!}
+                    @endif
+                </div>
+            </div>
+        @endif
+
         <div class="lab-section">
             <div class="lab-section-title">Project</div>
 
@@ -181,20 +195,6 @@
                         src="https://www.youtube.com/embed/{{ $project->youtube_video_id }}?controls=0&autoplay=1&loop=1&showinfo=0&mute=1&playlist={{ $project->youtube_video_id }}"
                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
-                </div>
-            </div>
-        @endif
-
-        @if ($project->about)
-            <div class="lab-section lab-section_large lab-section_about">
-                <div class="lab-section-title">About</div>
-
-                <div class="lab-section-content">
-                    @if (empty($project->about))
-                        None
-                    @else
-                        {!! $project->getAbout() !!}
-                    @endif
                 </div>
             </div>
         @endif
