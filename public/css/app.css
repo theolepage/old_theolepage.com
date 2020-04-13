@@ -127,7 +127,7 @@ p {
     align-items: flex-start;
 
     margin-bottom: 10px;
-    padding: 18px 26px;
+    padding: 20px 26px;
 
     color: rgb(60, 60, 60);
     font-size: 16px;
@@ -143,9 +143,13 @@ p {
 }
 
 .internship-icon {
-    width: 20px;
+    width: 22px;
 
-    margin: 2px 26px 0 0;
+    margin: 2px 34px 0 0;
+}
+
+.internship-link {
+    margin-left: 10px;
 }
 
 .heading {
@@ -571,6 +575,7 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
         display: block;
 
         margin-top: 8px;
+        margin-left: 0;
     }
 
     /* Center projects cuboid */
