@@ -79,7 +79,7 @@
         </div>
 
         <div class="lab-section">
-            <div class="lab-section-title">Cuboid</div>
+            <div class="lab-section-title">Card</div>
 
             <?php echo $__env->make('laboratory.projects.cuboid', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
         </div>

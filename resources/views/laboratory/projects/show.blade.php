@@ -80,7 +80,7 @@
         </div>
 
         <div class="lab-section">
-            <div class="lab-section-title">Cuboid</div>
+            <div class="lab-section-title">Card</div>
 
             @include('laboratory.projects.cuboid')
         </div>
