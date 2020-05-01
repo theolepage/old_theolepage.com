@@ -43,8 +43,7 @@
             <a class="header-name" href="/">Theo</a>
             <div class="header-nav">
                 <?php if(Route::currentRouteName() === 'projects.index'): ?>
-                    <!-- <a href="/" class="header-nav-item header-nav-item_active">Laboratory</a> -->
-                    <a href="/resume" class="header-nav-item">Resume</a>
+                    <a href="/resume" class="header-nav-item">About</a>
                 <?php else: ?>
                     <a href="/" class="header-nav-item">
                         
