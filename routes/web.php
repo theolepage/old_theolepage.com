@@ -33,7 +33,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
     });
 });
 
-
 // Resume
 Route::get('/resume', function () {
     return view('resume.resume');

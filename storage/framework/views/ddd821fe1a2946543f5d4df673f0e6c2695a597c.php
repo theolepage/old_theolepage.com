@@ -4,11 +4,6 @@
 
 <div class="wrapper">
 
-    <div class="heading">
-        <p>Hello, I am <span class="emphasize">Theo</span>, a computer science student.</p>
-        <p>Welcome to my <span class="emphasize">laboratory</span>.</p>
-    </div>
-
     <div class="projects">
         <div class="projects-section">
             <div class="projects-title">Main projects</div>

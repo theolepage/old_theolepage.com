@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
 /**
@@ -19,7 +19,7 @@ html, body {
 	color: rgb(60, 60, 60);
 	font-family: 'Roboto', sans-serif;
 
-    background: rgb(253, 253, 255);    
+    background: rgb(254, 254, 255);    
 }
 
 .turbolinks-progress-bar {
@@ -55,22 +55,28 @@ p {
  ** Header  
 **/
 
+.header {
+    background: #fff;
+
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+}
+
 .header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 34px 0;
+    padding: 28px 0;
 }
 
 .header-name {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
-    color: rgb(30, 30, 30);
+    color: rgb(50, 50, 50);
     font-family: 'Questrial';
 }
 .header-name:hover {
-    color: rgba(54, 122, 255, 1);
+    color: rgb(30, 30, 30);
     text-decoration: none;
 }
 
@@ -93,11 +99,13 @@ p {
 }
 
 .header-nav-item {
-	color: rgb(100, 100, 100);
+    /* margin-left: 16px; */
+
+	color: rgb(120, 120, 120);
 	font-family: 'Questrial', sans-serif;
 	font-size: 16px;
 }
-.header-nav-item:hover {
+.header-nav-item:hover, .header-nav-item_active {
 	text-decoration: none;
     color: rgb(30, 30, 30);
 }
@@ -120,17 +128,15 @@ p {
  * Main page
  */
 
-.internship {
+ .internship {
     display: flex;
-
     justify-content: center;
     align-items: flex-start;
 
-    margin-bottom: 10px;
-    padding: 20px 26px;
+    padding: 18px 26px;
 
     color: rgb(60, 60, 60);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.75;
 
     background: #E9F1FE;
@@ -138,18 +144,10 @@ p {
     border-radius: 0 0 8px 8px;
 }
 
-.internship-emphasize {
-    /* text-decoration: underline; */
-}
-
 .internship-icon {
-    width: 22px;
+    width: 16px;
 
-    margin: 2px 34px 0 0;
-}
-
-.internship-link {
-    margin-left: 10px;
+    margin: 4px 28px 0 0;
 }
 
 .heading {
@@ -181,7 +179,7 @@ p {
 .projects-section {
     width: 50%;
 
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .projects-title {
@@ -203,35 +201,50 @@ p {
  */
 
 .project {
-    display: flex;
-    flex-direction: column;
+    display: block;
     position: relative;
 
     margin: 20px 20px 0 0;
-    padding: 32px 22px;
+    padding: 30px 22px;
 
     width: 260px;
-    height: 180px;
+    height: 160px;
 
-    border-radius: 8px;
-    border: 1px dashed rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
     background: #fff;
+    box-shadow: 0px 4px 8px rgba(47, 55, 71, 0.03), 0px 1px 3px rgba(47, 55, 71, 0.08);
 
     font-family: 'Roboto', sans-serif;
 
-    transition: 0.2s border-color, 0.2s transform;
+    overflow: hidden;
+
+    transition: 0.2s box-shadow, 0.3s transform;
 }
 .project:hover {
     text-decoration: none;
-    border-color: rgba(0, 0, 0, 0.3);
-    transform: perspective(600px) translateY(-5px);
+
+    box-shadow: 0px 4px 8px rgba(47, 55, 71, 0.08), 0px 1px 3px rgba(47, 55, 71, 0.13);
+
+    transform: translateY(-4px);
+}
+
+.project-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 4px;
+
+    background: rgba(0, 0, 0, 0);
+    opacity: 0.7;
 }
 
 .project-corner {
     width: 16px;
     height: 16px;
     position: absolute;
-    bottom: 30px; right: 22px;
+    bottom: 28px; right: 22px;
 }
 
 .project-corner-wip {
@@ -256,18 +269,49 @@ p {
     to { transform: rotate(360deg); }
 }
 
+.project-icon {
+    display: inline-block;
+
+    width: 28px;
+    height: 28px;
+
+    margin-right: 10px;
+    padding-top: 6px;
+
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+
+    border-radius: 100%;
+    background: rgb(240, 240, 240);
+
+    opacity: 0.7;
+
+    transition: opacity 0.2s;
+}
+.project:hover .project-icon {
+    opacity: 1;
+}
+
 .project-title {
     font-size: 16px;
-    color: rgb(70, 70, 70);
+    color: rgb(30, 30, 30);
 }
 
 .project-description {
     margin-top: 10px;
 
     font-size: 12px;
-    color: rgb(80, 80, 80);
+    color: rgb(100, 100, 100);
     line-height: 1.6em;
     text-align: left;
+
+    opacity: 1;
+
+    transition: opacity 0.2s;
+}
+.project:hover .project-description {
+    opacity: 1;
 }
 
 .project-footer {
@@ -280,7 +324,7 @@ p {
 
 .project-id {
     position: absolute;
-    bottom: 32px; left: 22px;
+    bottom: 30px; left: 22px;
 
     font-size: 10px;
     color: rgb(140, 140, 140);
@@ -295,7 +339,7 @@ p {
     justify-content: space-between;
     align-items: center;
 
-    margin: 40px 100px 60px 100px;
+    margin: 80px 100px 60px 100px;
 }
 
 .lab-header-info {
@@ -481,12 +525,13 @@ p {
 }
 
 .lab-video {
+    position: relative;
+
     width: 100%;
 
     padding-bottom: 56.25%;
 
     overflow: hidden;
-    position: relative;
 }
 .lab-video iframe {
     width: 100%!important;
@@ -569,7 +614,6 @@ a.lab-contributor:hover span.lab-contributor-name { color: #000; }
         display: block;
 
         margin-top: 8px;
-        margin-left: 0;
     }
 
     /* Center projects cuboid */
