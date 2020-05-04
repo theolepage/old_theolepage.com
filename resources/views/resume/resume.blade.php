@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="resume-text">
-                Developped a deep interest in computer science through various challenging projects in small groups.<br />
+                Developed a deep interest in computer science through various challenging projects in small groups.<br />
                 First three years of the program taught in English as I am part of the international section.<br />
                 Courses: Linear algebra, Formal language, Programming, Computer architecture/networks, Probabilities, Statistics, ...
             </div>
@@ -181,7 +181,7 @@
                         <a href="/lab/ember-classification">Classification of EMBER dataset</a>
                     </div>
                     <div class="resume-text">
-                        Developped machine learning methods (k-means, deep neural networks, ...) to classify a dataset of malware programs.
+                        Developed machine learning methods (k-means, deep neural networks, ...) to classify a dataset of malware programs.
                         Ranked second out of 15 participants.
                     </div>
                 </div>
