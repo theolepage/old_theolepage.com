@@ -170,7 +170,9 @@
                         <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
                         <a href="/lab/cant-stop-driving">Can't Stop Driving</a>
                     </div>
-                    <div class="resume-text">Led a team, for a 4 months school project, to create a 3D multiplayer game built with Unity. It was chosen by a jury to be presented during open days.</div>
+                    <div class="resume-text">
+                        Led a team, for a 4 months school project, to create a 3D multiplayer game built with Unity and C#. It was chosen by a jury to be presented during open days.
+                    </div>
                 </div>
             </div>
 
@@ -191,7 +193,9 @@
                         <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
                         <a href="/lab/42sh">42sh - a POSIX shell</a>
                     </div>
-                    <div class="resume-text">Worked on a shell, complying with the Command Shell Language standard, in C during one month. Our project works with most of the Bash grammar.</div>
+                    <div class="resume-text">
+                        Made a shell in C complying with SCL standard and Bash grammar. The lexer, LL(1) parser and AST is fully documented and supported by a test suite.
+                    </div>
                 </div>
             </div>
         </div>

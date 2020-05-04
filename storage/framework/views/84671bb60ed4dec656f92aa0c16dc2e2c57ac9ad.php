@@ -171,7 +171,7 @@
                         <a href="/lab/cant-stop-driving">Can't Stop Driving</a>
                     </div>
                     <div class="resume-text">
-                        Gestion d'une équipe, pour un projet scolaire de 4 mois, pour créer un jeu 3D multijoueur avec Unity. Choisi par un jury pour être présenté lors des JPOs.
+                        Gestion d'une équipe, pour un projet scolaire de 4 mois, pour créer un jeu 3D multijoueur avec Unity en C#. Il fut sélectionné pour être présenté lors des JPOs.
                     </div>
                 </div>
             </div>
@@ -180,7 +180,7 @@
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
                         <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
-                        <a href="/lab/ember-classification">Classification of EMBER dataset</a>
+                        <a href="/lab/ember-classification">Classification du dataset EMBER</a>
                     </div>
                     <div class="resume-text">
                         Méthodes de machine learning (k-means, deep neural networks, ...) pour classifier un dataset de malware programs. Classé deuxième sur 15 participants.
@@ -193,7 +193,8 @@
                         <a href="/lab/42sh">42sh - un shell POSIX</a>
                     </div>
                     <div class="resume-text">
-                        Développement d'un shell, conforme à la norme Command Shell Language, en C pendant un mois. Fonctionne avec la plupart de la grammaire Bash.
+                        Réalisation d'un shell en C conforme à la norme SCL et similaire à Bash.
+                        Le lexer, le parser LL(1) et l'AST sont documentés et accompagnés d'une test suite.
                     </div>
                 </div>
             </div>
