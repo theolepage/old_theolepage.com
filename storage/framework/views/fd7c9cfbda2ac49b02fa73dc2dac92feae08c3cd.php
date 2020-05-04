@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <img class="resume-header-photo" src="/images/portrait2.jpg" alt="Portrait">
+        <!-- <img class="resume-header-photo" src="/images/portrait2.jpg" alt="Portrait"> -->
     </div>
 
     <div class="resume-section resume-section_experience">
@@ -94,7 +94,7 @@
                 </div>
                 <div class="resume-text">
                     Teaching C programming language to second year students through weekly graded practicals.<br />
-                    Worked on a web app to let other assistants test student projects and evaluate them.
+                    Worked on a web app to let other assistants test and evaluate student projects.
                 </div>
             </div>
             <div class="resume-experience-image">
@@ -122,8 +122,8 @@
                 </div>
             </div>
             <div class="resume-text">
-                Learnt the value of hard work and self-discipline through various challenging projects.<br />
-                First three years of the program were taught in English as I am part of the international section.<br />
+                Developped a deep interest in computer science through various challenging projects in small groups.<br />
+                First three years of the program taught in English as I am part of the international section.<br />
                 Courses: Linear algebra, Formal language, Programming, Computer architecture/networks, Probabilities, Statistics, ...
             </div>
         </div>
@@ -158,9 +158,9 @@
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
                         <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
-                        <a href="/lab/ocr">An Optical Character Recognition software</a>
+                        <a href="/lab/prophecy">Prophecy - a neural network framework</a>
                     </div>
-                    <div class="resume-text">Led a team during three months with the aim of creating a software, based on a neural network made from scratch, able to extract text from images.</div>
+                    <div class="resume-text">Implemented n-dimensional arrays, dense and convolution from scratch in C++ and Cuda. Offering some of Keras features and handles MNIST dataset.</div>
                 </div>
 
                 <div class="resume-item">
@@ -168,7 +168,7 @@
                         <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
                         <a href="/lab/cant-stop-driving">Can't Stop Driving</a>
                     </div>
-                    <div class="resume-text">Made a 3D multiplayer game built with Unity for a school project. It was chosen by a jury to be presented, during communication, events to new students.</div>
+                    <div class="resume-text">Led a team, for a 4 months school project, to create a 3D multiplayer game built with Unity. It was chosen by a jury to be presented during open days.</div>
                 </div>
             </div>
 
@@ -176,7 +176,7 @@
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
                         <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
-                        <a href="/lab/ember-classification">Recruitment project on EMBER dataset</a>
+                        <a href="/lab/ember-classification">Classification of EMBER dataset</a>
                     </div>
                     <div class="resume-text">
                         Developped machine learning methods (k-means, deep neural networks, ...) to classify a dataset of malware programs.
@@ -187,9 +187,9 @@
                 <div class="resume-item">
                     <div class="resume-subtitle resume-emphasize">
                         <img class="resume-icon" src="/images/icon-project.svg" alt="icon-project">
-                        <a href="/lab/42sh">A POSIX shell: 42sh</a>
+                        <a href="/lab/42sh">42sh - a POSIX shell</a>
                     </div>
-                    <div class="resume-text">Implemented a shell in 4 weeks in C by complying with the Command Shell Language standard. Our project is ready to use and is able to parse Bash grammar.</div>
+                    <div class="resume-text">Worked on a shell, complying with the Command Shell Language standard, in C during one month. Our project works with most of the Bash grammar.</div>
                 </div>
             </div>
         </div>

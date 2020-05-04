@@ -1,8 +1,6 @@
-@extends('layouts.resume')
+<?php $__env->startSection('title', 'CV — Theo Lepage'); ?>
 
-@section('title', 'CV — Theo Lepage')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <div class="resume">
 
@@ -276,4 +274,5 @@
 
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.resume', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

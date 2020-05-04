@@ -6,6 +6,12 @@ My personal website.
 
 ## To-Do
 
+### v2.5
+
+- [ ] Lab: use CSS grid to avoid gaps
+- [ ] Project cards: icon new
+- [ ] Project cards: on hover show arrow in corner
+
 ### v3.0
 
 #### Technologies

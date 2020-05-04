@@ -185,7 +185,7 @@ p {
     margin-bottom: 10px;
 
     font-size: 16px;
-    color: rgb(100, 100, 100);
+    color: rgb(60, 60, 60);
     line-height: 1.5;
     font-family: 'Questrial', sans-serif;
 }
@@ -204,7 +204,7 @@ p {
     position: relative;
 
     margin: 20px 20px 0 0;
-    padding: 30px 22px;
+    padding: 28px 22px;
 
     width: 260px;
     height: 160px;
@@ -243,7 +243,7 @@ p {
     width: 16px;
     height: 16px;
     position: absolute;
-    bottom: 28px; right: 22px;
+    bottom: 24px; right: 22px;
 }
 
 .project-corner-wip {
@@ -293,7 +293,7 @@ p {
 }
 
 .project-title {
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(30, 30, 30);
 }
 
@@ -323,10 +323,10 @@ p {
 
 .project-id {
     position: absolute;
-    bottom: 30px; left: 22px;
+    bottom: 26px; left: 22px;
 
     font-size: 10px;
-    color: rgb(140, 140, 140);
+    color: rgb(160, 160, 160);
 }
 
 /**
